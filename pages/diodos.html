@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="Es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diodo</title>
+        <!--Topografia-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+        <!--Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <!--estilos-->
+        <link rel="stylesheet" href="../CSS/estilo.css" />
+        <!--ESTILOS DEL SASS-->
+        <link rel="stylesheet" href="../sass/css/destino.css"/>
+
+    </head>
+
+    <body class="body_diodo">
+        <header>
+            <!--NAV-->
+            <nav class="nav_conteiner navbar navbar-expand-sm navbar-light">
+        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <!--LOGO-->
+                <div class="nav_hijo2">
+                    <p class="cursiva">Componentes Electrónicos</p>
+                </div>
+        
+                <div class="collapse navbar-collapse" id="opciones">
+        
+                    <!--ENLACES-->
+                    <ul class="nav_hijo1 ">
+                        <li class="nav-item"><a class="nav-link" href="../index.html"> inicio</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="resistencia.html"> resistencias </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="diodos.html"> diodos</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="capacitores.html">capacitores </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="transistores.html">transitores </a> </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--CIERRA EL NAV-->
+        </header>
+        <!--CIERRA EL HEADER-->
+
+        <!--EMPIEZA EL MAIN-->
+        <main class="main_diodo">
+            <h1>Diodos</h1>
+
+            <!--SECCION 1-->
+            <section class="diodos_seccion1">
+                <h2>introduccion:</h2>
+                <p>
+                    Un diodo es un componente electrónico de dos terminales que permite la circulación de la corriente eléctrica 
+                    a través de él en un solo sentido, bloqueando el paso si la corriente circula en sentido contrario, no solo 
+                    sirve para la circulación de corriente eléctrica sino que este la controla y resiste. Esto hace que el diodo 
+                    tenga dos posibles posiciones: una a favor de la corriente (polarización directa) y otra en contra de la 
+                    corriente (polarización inversa). 
+                    <br>
+                    Los primeros diodos eran válvulas o tubos de vacío, también llamados válvulas termoiónicas constituidos por 
+                    dos electrodos rodeados de vacío en un tubo de cristal, con un aspecto similar al de las lámparas 
+                    incandescentes.
+                </p>
+            </section>
+            
+            <!--SECCION 2-->
+            <section class="diodos_seccion2">
+                <article class="diodo_color1">
+                    <h2>Curva del diodo</h2>
+                    <img src="../imagenes/Curva-característica-diodo-zener.jpg" alt="grafica del diodo">
+                    <p>
+                        De forma simplificada, la curva característica de un diodo (I-V) consta de dos regiones: por debajo de cierta diferencia
+                        de potencial, se comporta como un circuito abierto (no conduce), y por encima de ella como un circuito cerrado con una
+                        resistencia eléctrica muy pequeña. Debido a este comportamiento, se les suele denominar rectificadores, ya que son
+                        dispositivos capaces de suprimir la parte negativa de cualquier señal, como paso inicial para convertir una corriente
+                        alterna en corriente continua.
+                    </p>
+                </article>
+
+                <article class="diodo_color2">
+                    <h3><b>Simbolos</b></h3>
+                    <img src="../imagenes/varios diodos.jpg" alt="varios diodos">   
+            
+                    <h2>Tipos de diodos:</h2>
+                    <div class="diodos_lista1">
+                    <ol >
+                        <li class="diodo_lista1Gris"><a  href="#diodo1">Diodo detector o de baja señal</a></li> 
+                        <li class="diodo_lista1Gris"><a href="#diodo2">Diodo rectificador</a></li> 
+                        <li>Diodo zener</li>
+                        <li>Diodo emisor de luz (led)</li>
+                        <li>Diodo varicap</li>
+                        <li>Diodo tunel</li>
+                        <li>Diodo Schottky</li>
+                        <li>Fotodiodo</li>
+                    </ol>
+                    </div>
+                </article>
+            </section>
+            
+            <!--SECCION 3-->
+            <section class="diodos_seccion3">
+                <article class="diodo_color1">
+                    <h4 class="diodo_tituloh4"> <b>Diodo detector o de baja señal</b></h4>
+                    
+                    <div class="diodo_dividir">
+                        <div class="diodo_foto">
+                            <img class ="foto"src="../imagenes/diodo-detector-de-germanio.jpg" alt="diodo de germanio">
+                        </div>
+                        <div  class="diodo_parrafo">
+                            <p>
+                                Los diodos detectores también denominados diodos de señal o de contacto puntual, están hechos de 
+                                germanio y se caracterizan por poseer una unión PN muy diminuta. Esto le permite operar a muy 
+                                altas frecuencias y con señales pequeñas. Se emplea por ejemplo, en receptores de radio para 
+                                separar la componente de alta frecuencia (portadora) de la componente de baja frecuencia 
+                                (información audible). Esta operación se denomina detección. 
+                            </p>
+                        </div>
+                    </div>      
+                                
+                        <h4 class="diodo_tituloh4"> <b>Diodo rectificador</b> </h4>
+                        <p>
+                            Un diodo rectificador es un dispositivo electrónico que permite convertir la corriente alterna en 
+                            corriente continua. Y tenemos de 2 tipos:
+                        </p>
+                    <div class="diodo_dividir2">
+                        <div class="diodo_centrar">           
+                        <h5 ><b>rectificador de media onda</b></h5>
+                            <img src="../imagenes/circuito-rectificador-de-media-onda.jpg" alt="rectificador de media onda" >
+                        </div>
+                        <div>
+                            <h5 class="diodo_centrar"><b>Rectificador de onda completa</b></h5>
+                            <img src="../imagenes/rectificador de onda completa.jpg" alt="rectificador de onda completa">
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </main>
+        <!--CIERRA EL MAIN-->
+        <!-- EMPIEZA EL FOOTER-->
+        <footer id=footer>
+            
+            <div class="footer_hijo1">
+                <p class="footer_acomodar">links</p>
+            <ul>
+                <li><a href="../index.html">home</a> </li>
+                <li><a href="../pages/resistencia.html">resistencias</a> </li>
+                <li><a href="diodos.html">diodo</a> </li>
+                <li><a href="../pages/capacitores.html">capacitores</a> </li>
+                <li><a href="../pages/transistores.html">transistores</a> </li>
+            </ul>
+            </div>
+
+            <div class="footer_hijo2_1">
+                <p class="cursiva">Componentes Electrónicos</p>
+            </div>
+
+            <div class="footer_hijo3">
+                <p class="footer_centrado">Siguenos en nuestras redes:</p>
+                <a href="#footer">
+                    <img class="footer_reducirTamaño" src="../imagenes/Footer/instegram sin fondo 2.png" alt="Imagen de instagram">
+                </a>
+                <a href="#footer">
+                    <img class="footer_reducirTamaño footer_facebook" src="../imagenes/Footer/Facebook sin fondo.png"
+                        alt="Imagen de facebook">
+                </a>
+        
+                <a href="#footer">
+                    <img class="footer_reducirTamaño" src="../imagenes/Footer/twitter sin fondo.png" alt="Imagen de twitter">
+                </a>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
+</html>

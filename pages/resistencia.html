@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="Es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Resistencia</title>
+        <!--Tipografia-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap" rel="stylesheet">
+        <!--Boostrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <!--estilos-->    
+        <link rel="stylesheet" href="../CSS/estilo.css" />
+        <!--ESTILOS DEL SASS-->
+        <link rel="stylesheet" href="../sass/css/destino.css" />
+    </head>
+
+    <body class="body_resistencia">
+        <header>    
+            <!--NAV-->   
+            <!--nav responsive (boostrap)-->           
+            <nav class="nav_conteiner navbar navbar-expand-sm navbar-light">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <!--LOGO-->
+                <div class="nav_hijo2">
+                    <p class="cursiva">Componentes Electrónicos</p>
+                </div>
+            
+                <div class="collapse navbar-collapse" id="opciones">
+                    <!--ENLACES-->
+                    <ul class="nav_hijo1 ">
+                        <li class="nav-item"><a class="nav-link" href="../index.html"> inicio</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="resistencia.html"> resistencias </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="diodos.html"> diodos</a> </li>
+                        <li class="nav-item"><a class="nav-link" href="capacitores.html">capacitores </a> </li>
+                        <li class="nav-item"><a class="nav-link" href="transistores.html">transitores </a> </li>
+                    </ul>
+                </div>
+                <!--Fin del nav responsive (boostrap)-->
+            </nav>
+            <!--CIERRA EL NAV-->
+        </header>
+        <!--CIERRA EL HEADER-->
+
+
+        <!--EMPIEZA EL MAIN-->
+        <main class=main_resistencia>
+            <h1>resistencia</h1> 
+            <!--SECCION 1-->
+            <section class="resistencia_seccion1">
+                <article>
+                    <h2>introduccion:</h2>
+                    <p>
+                        El resistor es el elemento de circuito más utilizado en la práctica. <strong>Sus usos más comunes son la disipación potencia,generación de calor, limitación de corriente, división de voltaje, etc.</strong> El resistor se describe matemáticamente mediante la ley de Ohm. Los resistores se miden por esa razón en unidades llamadas Ohms, generalmente se utiliza elsímbolo Ω
+                        para representar los Ohms. En la práctica los valores utilizados se extienden entre algunas décimas de ohm avarios millones de ohms.
+                        <br>
+                        Para representar el valor de las resistencias se utiliza un código de colores. El código especifica claramente
+                        el valor y la precisión con que el elemento fue fabricado. Además de su valor es importante la potencia eléctrica que disipa un resistor.
+                    </p>
+                </article>
+            </section>
+            <!--FIN SECCION 1-->
+
+            <!--SECCION 2-->
+            <section class="resistencia_seccion2">
+                <article>
+                    <h2>Simbolo:</h2>
+                    <img src= "../imagenes/Simbolos.jpg" alt="simbolos" >
+                </article>
+
+                <article>
+                    <h2>Ley de ohm</h2>
+                    <p class="resistencia_ItalicaCentrada">
+                        La ley de Ohm se usa para determinar la relación entre tensión, corriente y resistencia en un circuito eléctrico. La formula de esta es:
+                    </p> 
+
+                    
+                    <strong class="resistencia_formula ">E= I x R</strong> 
+                    <p class="resistencia_centrar">En donde: </p>
+                    <ul class="resistencia_centrar" >
+                        <li><p>E = tension [V]</p></li>
+                        <li><p>I = corriente [A]</p></li>
+                        <li><p>R = resustencia [Ω]</p></li>
+                    </ul>
+                    
+                    <div class="resistencia_juntar">
+                        <img class="resistencia_imagen img-fluid"  src="../imagenes/ley de ohm.jpg" alt="ley de ohm">
+                        
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/izDKIyCPRWE" title="YouTube video player"
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </article>
+            </section> 
+            <!--FIN DE SECCION 2-->
+
+            <!--SECCION 3-->
+            <section class="resistencia_seccion3">
+                <h2>¿Que es el Codigo de colores?</h2>
+                <p>
+                    Las resistencias posen bandas de colores, a traves de esta banda podemos saber el valor que poseen. Es la manera
+                    que emplean los fabricantes para decirnos cuantos ohmios posen.
+                </p>
+            
+                <article>
+                    <img class="resistencia_resducirImagen1 img-fluid" src= "../imagenes/codigo_de_colores..png" alt="Codigo de colores" >
+                    
+                    <div class="resistencia_lista">
+                        <ol>
+                            <li>Las dos primeras bandas indican las dos primeras cifras del valor del resistor. </li>
+                            <li>La tercera banda indica cuantos ceros hay que aumentarle al valor anterior para obtener el valor final de la resistor. </li>
+                            <li>La cuarta banda nos indica la tolerancia. </li>
+                        </ol>
+                    </div>
+                </article>
+
+                <article>
+                    <h2 class="ejemplo">ejemplo:</h2>
+
+                    <img class="resistencia_resducirImagen2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Resistencia.svg/1200px-Resistencia.svg.png" >
+                       
+                    <p>
+                        La resistencia posee los siguientes valores: 
+                    </p>
+                                
+                    <!--TABLA HECHA CON BOOSTRAP-->
+                    <table class="table" cellspacing="15" Cellpading="15" border="3">
+                        <tr class="table-primary">
+                            <td>rojo</td>
+                            <td>violeta</td>
+                            <td>verde</td>
+                            <td>gris</td>
+                            <td>total</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td>2</td>
+                            <td>7</td>
+                            <td>100000</td>
+                            <td>10%</td>
+                            <td>2,7M</td>
+                        </tr>
+                    </table>
+                </article>
+            <!--FIN DE SECCION 3-->
+            </section>
+
+            <!--SECCION 4-->
+            <section class="resistencia_seccion4">
+                <article>
+                
+                    <h2>Valores de resistencias comerciales </h2>
+
+                    <!--COLORES DE LA TABLA DADOS CON BOOSTRAP-->
+                    <table class="resistencia_tabla table " cellspacing="18" Cellpading="18" border="3" > 
+                        <tr class="table-primary">
+                            <td>1</td>
+                            <td>10</td>
+                            <td>100</td>
+                            <td>1K</td>
+                            <td>10K</td>
+                            <td>100K</td>
+                            <td>1M</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td>1,2</td>
+                            <td>12</td>
+                            <td>120</td>
+                            <td>1,2K</td>
+                            <td>12K</td>
+                            <td>120K</td>
+                            <td>1,2M</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td>1,5</td>
+                            <td>15</td>
+                            <td>150</td>
+                            <td>1,5K</td>
+                            <td>15K</td>
+                            <td>150K</td>
+                            <td>1,5M</td>
+                        </tr>
+                        <tr class="table-secondary">
+                            <td>1,8</td>
+                            <td>18</td>
+                            <td>180</td>
+                            <td>1,8K</td>
+                            <td>18K</td>
+                            <td>180K</td>
+                            <td>1,8M</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>2,2</td>
+                            <td>22</td>
+                            <td>220</td>
+                            <td>2,2K</td>
+                            <td>22K</td>
+                            <td>220K</td>
+                            <td>2,2M</td>
+                        </tr>
+                        <tr class="table-success">
+                            <td>2,7</td>
+                            <td>27</td>
+                            <td>270</td>
+                            <td>2,7K</td>
+                            <td>27K</td>
+                            <td>270K</td>
+                            <td>2,7M</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>3,3</td>
+                            <td>33</td>
+                            <td>330</td>
+                            <td>3,3K</td>
+                            <td>33K</td>
+                            <td>330K</td>
+                            <td>3,3M</td>
+                        </tr>
+                        <tr class="table-danger">
+                            <td>3,9</td>
+                            <td>39</td>
+                            <td>390</td>
+                            <td>3,9K</td>
+                            <td>39K</td>
+                            <td>390K</td>
+                            <td>3,9M</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>4,7</td>
+                            <td>47</td>
+                            <td>470</td>
+                            <td>4,7K</td>
+                            <td>47K</td>
+                            <td>470K</td>
+                            <td>4,7M</td>
+                        </tr>
+                        <tr class="table-warning">
+                            <td>5,6</td>
+                            <td>56</td>
+                            <td>560</td>
+                            <td>5,6K</td>
+                            <td>56K</td>
+                            <td>560K</td>
+                            <td>5,6M</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td>6,8</td>
+                            <td>68</td>
+                            <td>680</td>
+                            <td>6,8K</td>
+                            <td>68K</td>
+                            <td>680K</td>
+                            <td>6,8M</td>
+                        </tr>
+                        <tr class="table-info">
+                            <td>8,2</td>
+                            <td>82</td>
+                            <td>820</td>
+                            <td>8,2K</td>
+                            <td>82K</td>
+                            <td>820K</td>
+                            <td>8,2M</td>
+                        </tr>
+                    
+                    </table>
+                </article>
+
+            
+            </section>
+
+        </main>
+        <!--CIERRA EL MAIN-->
+        <!-- EMPIEZA EL FOOTER-->
+        <footer id="footer">
+            <div class="footer_hijo1">
+                <p class="footer_acomodar">links</p>
+                <ul>
+                    <li><a href="../index.html">home</a> </li>
+                    <li><a href="resistencia.html">resistencias</a> </li>
+                    <li><a href="../pages/diodos.html">diodo</a> </li>
+                    <li><a href="../pages/capacitores.html">capacitores</a> </li>
+                    <li><a href="../pages/transistores.html">transistores</a> </li>
+                </ul>
+            </div>
+        
+            <div class="footer_hijo2_1">
+                <p class="cursiva">Componentes Electrónicos</p>
+            </div>
+        
+            <div class="footer_hijo3">
+                <p class="footer_centrado">Siguenos en nuestras redes:</p>
+                <a href="#footer">
+                    <img class="footer_reducirTamaño" src="../imagenes/Footer/instegram sin fondo 2.png" alt="Imagen de instagram">
+                </a>
+                <a href="#footer">
+                    <img class="footer_reducirTamaño footer_facebook" src="../imagenes/Footer/Facebook sin fondo.png"
+                        alt="Imagen de facebook">
+                </a>
+        
+                <a href="#footer">
+                    <img class="footer_reducirTamaño" src="../imagenes/Footer/twitter sin fondo.png" alt="Imagen de twitter">
+                </a>
+            </div>
+        
+        </footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+    </body>
+</html>
