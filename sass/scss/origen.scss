@@ -4,6 +4,8 @@
     padding: 0;
 }
 
+@import "responsive";
+@import "variables";
 /*GENERAL*/
 
 body{
@@ -292,7 +294,7 @@ p{
     flex-wrap: wrap;
 
     .index_hijo1{
-        background-color: #BDECB6;
+        background-color: $color_verde_claro;
         display: flex;  
         flex-direction: row;
         justify-content: space-evenly;
@@ -322,7 +324,7 @@ p{
     }
 
     .index_hijo2{
-        background-color: #84C3BE;
+        background-color: $color_celeste;
         display: flex;  
         flex-direction: row-reverse;
         justify-content: space-evenly;
@@ -349,7 +351,7 @@ p{
         }
     }
     .index_hijo3{
-        background-color: #BDECB6;
+        background-color: $color_verde_claro;
         display: flex;  
         flex-direction: column;
         justify-content: center;
@@ -400,7 +402,7 @@ p{
                     RESISTENCIA
 ************************************************************/
 .body_resistencia{
-    background-color: #BDECB6;
+    background-color: $color_verde_claro;
 
     .main_resistencia{
     margin-bottom: 5%;
@@ -410,20 +412,20 @@ p{
     justify-content: space-between;
 
         .resistencia_seccion1{
-            background-color: mistyrose;
-            margin-bottom: 5%;
-            margin-left: 18%;
-            margin-right: 15%;
-            padding: 1%;
+            background-color: $color_seccion_1;
+            margin-bottom: $tam_margin-bottom;
+            margin-left: $tam_margin-left;
+            margin-right: $tam_margin-right;
+            padding: $tam_padding;
             }
 
         .resistencia_seccion2{
             text-align: center;
-            background-color:cornsilk;
-            margin-bottom: 5%;
-            margin-left: 18%;
-            margin-right: 15%;
-            padding: 1%;
+            background-color: $color_seccion_2;
+            margin-bottom: $tam_margin-bottom;
+            margin-left: $tam_margin-left;
+            margin-right: $tam_margin-right;
+            padding: $tam_padding;
 
             .resistencia_ItalicaCentrada{
                 font-style: italic;
@@ -463,11 +465,11 @@ p{
             flex-direction: column; 
             justify-content: center;
             align-items: center;
-            background-color: mistyrose;
-            margin-left: 18%;
-            margin-right: 15%;
-            padding: 1%;
-            margin-bottom: 5%;
+            background-color: $color_seccion_1;
+            margin-left: $tam_margin-left;
+            margin-right: $tam_margin-right;
+            padding: $tam_padding;
+            margin-bottom: $tam_margin_bottom;
 
             
             .resistencia_resducirImagen1{
@@ -495,10 +497,10 @@ p{
         .resistencia_seccion4{
             display: flex;
             justify-content: center;   
-            background: oldlace;
-            margin-left: 18%;
-            margin-right: 15%;
-            padding: 1%;
+            background: $color_seccion_2;
+            margin-left: $tam_margin-left;
+            margin-right: $tam_margin-right;
+            padding: $tam_padding;
 
             .resistencia_tabla{
                 margin-bottom: 7%;   
@@ -520,7 +522,7 @@ p{
                     DIODOS
 ************************************************************/
 .body_diodo{
-    background-color: #84C3BE;
+    background-color: $color_celeste;
     .main_diodo{
         text-align: center;
         display: flex;
@@ -529,28 +531,28 @@ p{
         justify-content: space-between;
 
         .diodos_seccion1{
-            margin-bottom: 5%;
-            background-color: cornsilk;
-            margin-left: 18%;
-            margin-right: 15%;
-            padding: 1%;
+            background-color: $color_seccion_2;
+            margin-bottom: $tam_margin-bottom;
+            margin-left: $tam_margin-left;
+            margin-right: $tam_margin-right;
+            padding: $tam_padding;
         }
 
         .diodos_seccion2{
             text-align: center;
             .diodo_color1{
-                background-color: mistyrose;
-                margin-left: 18%;
-                margin-right: 15%;
-                padding: 1%;
-                margin-bottom: 5%;
+                background-color: $color_seccion_1;
+                margin-bottom: $tam_margin-bottom;
+                margin-left: $tam_margin-left;
+                margin-right: $tam_margin-right;
+                padding: $tam_padding;
             }
             .diodo_color2{
-                background: oldlace;
-                margin-left: 18%;
-                margin-right: 15%;
-                padding: 1%;
-                margin-bottom: 5%;
+                background-color: $color_seccion_2;
+                margin-bottom: $tam_margin-bottom;
+                margin-left: $tam_margin-left;
+                margin-right: $tam_margin-right;
+                padding: $tam_padding;
 
                 .diodos_lista1{
                     margin-top: 1%;
@@ -577,11 +579,11 @@ p{
             flex-direction: column;
             flex-wrap: nowrap;
             .diodo_color1{
-                background-color: mistyrose;
-                margin-left: 18%;
-                margin-right: 15%;
-                padding: 1%;
-                margin-bottom: 5%;
+                background-color: $color_seccion_1;
+                margin-bottom: $tam_margin-bottom;
+                margin-left: $tam_margin-left;
+                margin-right: $tam_margin-right;
+                padding: $tam_padding;
                 .diodo_tituloh4{
                     font-size: 1.5em;
                     text-align: center;
@@ -627,27 +629,27 @@ p{
                     CAPACITORES
 ************************************************************/
 .body_capacitor{
-    background-color: #BDECB6;
+    background-color: $color_verde_claro;
     .main_capacitor{
         text-align: center;
         margin-bottom: 5%;
         .capacitor_fondo1{
-            background-color: mistyrose;
-            margin-bottom: 5%;
-            margin-left: 18%;
-            margin-right: 15%;
-            padding: 1%;
+            background-color: $color_seccion_1;
+            margin-bottom: $tam_margin-bottom;
+            margin-left: $tam_margin-left;
+            margin-right: $tam_margin-right;
+            padding: $tam_padding;
             .capacitor_imagen{
                 margin-top: 1.5%;
                 margin-bottom: 1%;
             }
         }
         .capacitor_fondo2{
-            background-color: cornsilk;
-            margin-bottom: 5%;
-            margin-left: 18%;
-            margin-right: 15%;
-            padding: 1%;
+            background-color: $color_seccion_2;
+            margin-bottom: $tam_margin-bottom;
+            margin-left: $tam_margin-left;
+            margin-right: $tam_margin-right;
+            padding: $tam_padding;
             .capacitor_lista{
                 font-size: 110%;
                 color: rgb(27, 26, 26);
@@ -676,21 +678,21 @@ p{
         .transistor_seccion{
             margin-bottom: 3%;
             .transistor_fondo1{
-                background-color: cornsilk;
-                margin-bottom: 5%;   
-                margin-left: 18%;
-                margin-right: 15%;
-                padding: 1%;
+                background-color: $color_seccion_2;
+                margin-bottom: $tam_margin-bottom;
+                margin-left: $tam_margin-left;
+                margin-right: $tam_margin-right;
+                padding: $tam_padding;
                 .transistor_lista{
                     list-style: none;
                 }
             }
             .transistor_fondo2{
-                background-color: mistyrose;
-                margin-bottom: 5%;
-                margin-left: 18%;
-                margin-right: 15%;
-                padding: 1%;
+                background-color: $color_seccion_1;
+                margin-bottom: $tam_margin-bottom;
+                margin-left: $tam_margin-left;
+                margin-right: $tam_margin-right;
+                padding: $tam_padding;
                 .agrandarImagen{
                     margin-top: 25px;
                     margin-bottom: 25px;
@@ -706,74 +708,4 @@ p{
         }
     }
 
-}
-
-
-
-
-/*************************************************************
-                    @MEDIAS
-**************************************************************/
-/*RESPONSIVE DEL HEADER DE OTRAS PAGINAS */
-@media screen and (max-width: 1200px){
-    .nav_hijo2{
-        display: none;
-    }
-}
-@media screen and (max-width: 800px){
-    .nav_hijo{
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        background-color: rgba(212, 212, 212,0.8);
-        width: 200px;
-    }
-}
-
-
-/*RESPONSIVE DEL INDEX*/
-@media screen and (max-width: 1023px) {
-    .index_hijo1{
-        background-color: #BDECB6;
-        display: flex;  
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-decoration: none;
-        color: black;
-        flex-wrap: wrap;
-        width: auto;
-        height: 1000px;
-        padding: -3%;
-    }
-
-    .index_hijo2{
-        background-color: #84C3BE;
-        display: flex;  
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-decoration: none;
-        color: black;
-        flex-wrap: wrap;
-        width: 94%;
-        height: 1000px;
-        padding-left: -3%;
-    }
-
-    .index_tamañoDeImagen{
-    height: 200px;
-}
-
-    @keyframes cuadrado{
-    }
-    @keyframes rotar {
-    }
-
-    .index_texto1{
-    width: 100%;
-    }
-    .index_texto1:hover{
-        transform: scale(1,1);
-    }
 }

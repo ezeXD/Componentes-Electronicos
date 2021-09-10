@@ -4,6 +4,88 @@
   margin: 0;
   padding: 0; }
 
+/*************************************************************
+                    RESPONSIVES
+**************************************************************/
+/*RESPONSIVE DEL INDEX*/
+@media screen and (max-width: 1023px) {
+  .index_hijo1 {
+    background-color: #BDECB6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    flex-wrap: wrap;
+    width: auto;
+    height: 1000px;
+    padding: -3%; }
+  .index_hijo2 {
+    background-color: #84C3BE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    flex-wrap: wrap;
+    width: 94%;
+    height: 1000px;
+    padding-left: -3%; }
+  .index_tamañoDeImagen {
+    height: 200px; }
+  @keyframes cuadrado {}  @keyframes rotar {}  .index_texto1 {
+    width: 100%; }
+  .index_texto1:hover {
+    transform: scale(1, 1); } }
+
+/*RESPONSIVE DEL HEADER DE OTRAS PAGINAS */
+@media screen and (max-width: 1200px) {
+  .nav_hijo2 {
+    display: none; } }
+
+@media screen and (max-width: 800px) {
+  .nav_hijo {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgba(212, 212, 212, 0.8);
+    width: 200px; } }
+
+/*RESPONSIVE DEL INDEX*/
+@media screen and (max-width: 1023px) {
+  .index_hijo1 {
+    background-color: #BDECB6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    flex-wrap: wrap;
+    width: auto;
+    height: 1000px;
+    padding: -3%; }
+  .index_hijo2 {
+    background-color: #84C3BE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    flex-wrap: wrap;
+    width: 94%;
+    height: 1000px;
+    padding-left: -3%; }
+  .index_tamañoDeImagen {
+    height: 200px; }
+  @keyframes cuadrado {}  @keyframes rotar {}  .index_texto1 {
+    width: 100%; }
+  .index_texto1:hover {
+    transform: scale(1, 1); } }
+
 /*GENERAL*/
 body {
   font-family: 'Roboto', sans-serif; }
@@ -385,7 +467,7 @@ p {
     .body_resistencia .main_resistencia .resistencia_seccion4 {
       display: flex;
       justify-content: center;
-      background: oldlace;
+      background: cornsilk;
       margin-left: 18%;
       margin-right: 15%;
       padding: 1%; }
@@ -412,8 +494,8 @@ p {
     flex-wrap: nowrap;
     justify-content: space-between; }
     .body_diodo .main_diodo .diodos_seccion1 {
-      margin-bottom: 5%;
       background-color: cornsilk;
+      margin-bottom: 5%;
       margin-left: 18%;
       margin-right: 15%;
       padding: 1%; }
@@ -421,16 +503,16 @@ p {
       text-align: center; }
       .body_diodo .main_diodo .diodos_seccion2 .diodo_color1 {
         background-color: mistyrose;
+        margin-bottom: 5%;
         margin-left: 18%;
         margin-right: 15%;
-        padding: 1%;
-        margin-bottom: 5%; }
+        padding: 1%; }
       .body_diodo .main_diodo .diodos_seccion2 .diodo_color2 {
-        background: oldlace;
+        background-color: cornsilk;
+        margin-bottom: 5%;
         margin-left: 18%;
         margin-right: 15%;
-        padding: 1%;
-        margin-bottom: 5%; }
+        padding: 1%; }
         .body_diodo .main_diodo .diodos_seccion2 .diodo_color2 .diodos_lista1 {
           margin-top: 1%;
           text-align: left;
@@ -451,10 +533,10 @@ p {
       flex-wrap: nowrap; }
       .body_diodo .main_diodo .diodos_seccion3 .diodo_color1 {
         background-color: mistyrose;
+        margin-bottom: 5%;
         margin-left: 18%;
         margin-right: 15%;
-        padding: 1%;
-        margin-bottom: 5%; }
+        padding: 1%; }
         .body_diodo .main_diodo .diodos_seccion3 .diodo_color1 .diodo_tituloh4 {
           font-size: 1.5em;
           text-align: center;
@@ -549,52 +631,3 @@ p {
     .body_transitores .main_transistores .transistor_h3 {
       padding: 2%;
       text-decoration: underline; }
-
-/*************************************************************
-                    @MEDIAS
-**************************************************************/
-/*RESPONSIVE DEL HEADER DE OTRAS PAGINAS */
-@media screen and (max-width: 1200px) {
-  .nav_hijo2 {
-    display: none; } }
-
-@media screen and (max-width: 800px) {
-  .nav_hijo {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: rgba(212, 212, 212, 0.8);
-    width: 200px; } }
-
-/*RESPONSIVE DEL INDEX*/
-@media screen and (max-width: 1023px) {
-  .index_hijo1 {
-    background-color: #BDECB6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    flex-wrap: wrap;
-    width: auto;
-    height: 1000px;
-    padding: -3%; }
-  .index_hijo2 {
-    background-color: #84C3BE;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    flex-wrap: wrap;
-    width: 94%;
-    height: 1000px;
-    padding-left: -3%; }
-  .index_tamañoDeImagen {
-    height: 200px; }
-  @keyframes cuadrado {}  @keyframes rotar {}  .index_texto1 {
-    width: 100%; }
-  .index_texto1:hover {
-    transform: scale(1, 1); } }
