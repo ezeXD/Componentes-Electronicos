@@ -18,8 +18,6 @@
 body{
    font-family: 'Roboto', sans-serif;   
 }
-
-
 h1{
     text-align: center;
     font-size: 400%;
@@ -27,32 +25,25 @@ h1{
     padding-top: 0vh;
     margin-bottom: 5%;
 }
-
 h2{
     color:black;
     text-align: center;
     font-size: 250%;
 }
-
 h3{
     font-size: 180%;
     text-align: center;
 }
-
 p{
     font-size: 130%; 
     text-align: justify;
 }
-
 .cursiva{
    font-family: 'MonteCarlo', cursive;
 }
-
-
 /*====================================================================
     FALTA RESPONSIVE
 ====================================================================*/
-
 /*************************************************************
                     HEADER INDEX
 *************************************************************/
@@ -109,26 +100,24 @@ p{
         animation-duration: 10s;
         animation-name: logo;
         animation-iteration-count: infinite;
-        
     }
     @keyframes logo {
     20% {
         color: red;
-    }
+        }
     40%{
         color: #ff7e00;
-    }
+        }
     60%{
         color: green;
-    }
+        }
     80%{
         color: blue;
-    }
+        }
     100% {
         color: black;
+        }
     }
-    }
-
     .nav_hijo3_fondo{
         grid-area: fondo;
         background-image: url(../../imagenes/fondos/fondo.png);
@@ -137,18 +126,15 @@ p{
         width: 100%;
     }
 }
-
 /************************************************************
                HEADER OTRAS PAGINAS
 ************************************************************/
-
 .nav_conteiner{
     width: 100%;
     height: 10vh;
     display: flex;
     background-image: linear-gradient(to top, white , gray);
     flex-direction: row;
-
     /*enlaces*/
     .nav_hijo1{
         width: 100%;
@@ -159,7 +145,6 @@ p{
         list-style: none;
         margin-right: 10px;
         padding-top: 15px;
-
         li a{
             text-decoration: none;
             color: rgb(48, 46, 46);
@@ -174,7 +159,6 @@ p{
             background-color: rgb(212, 212, 212);
         }
     }
-    
     /*logo*/
     .nav_hijo2{ 
     line-height: 70px; 
@@ -196,7 +180,6 @@ p{
     animation-iteration-count: infinite;
     }
 }
-
 /**************************************************************
                    FOOTER
 **************************************************************/
@@ -207,10 +190,8 @@ p{
     background-image: linear-gradient(to bottom, gray ,black);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    
+    justify-content: space-around;   
     .footer_hijo1{  
-
         p{
             color: orange;
             text-decoration: underline;
@@ -236,7 +217,6 @@ p{
             }
         }
     }
-    
     .footer_hijo2{ 
         line-height: 70px; 
         color: black;
@@ -254,7 +234,6 @@ p{
         animation-name: logo;
         animation-iteration-count: infinite;
     }
-
     .footer_hijo2_1{
          line-height: 70px; 
         color: black;
@@ -272,36 +251,29 @@ p{
         animation-name: logo;
         animation-iteration-count: infinite;
     }
-
-    
 /*===========================================================
     Ver si lo cambio por los iconso que cambia de color.            
 ===========================================================*/
     .footer_hijo3{
         color: rgb(201, 190, 190);
-
         .footer_centrado{
             text-align: center;
             text-decoration: underline;
             font-size: 170%;
             padding-bottom: 2%;
         }
-
         .footer_reducirTamaño{
             height: 70px;
         }
     }
 }
-
 /***********************************************************
                         INDEX
 ************************************************************/
-
 .index_padre{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
     .index_hijo1{
         background-color: $color_verde_claro;
         display: flex;  
@@ -321,7 +293,6 @@ p{
             animation-duration: 2.5s;
             animation-timing-function: linear;
         }
-    
         @keyframes cuadrado{
         0%{
             border-radius: 50%;}
@@ -331,7 +302,6 @@ p{
             border-radius: 50%;}
         } 
     }
-
     .index_hijo2{
         background-color: $color_celeste;
         display: flex;  
@@ -342,14 +312,12 @@ p{
         text-decoration: none;
         color: black;
         flex-wrap: wrap;
-
         .index_imagenCuadrada:hover{
             animation-name: rotar;
             animation-duration: 2.5s;
             animation-iteration-count: 1;
             animation-timing-function: linear;
         }
-
         @keyframes rotar {
         0%{
             transform: rotate(0deg);}
@@ -367,14 +335,12 @@ p{
         align-items: center;
         padding: 3%;
         flex-wrap: wrap;
-
         .index_negrita{
             font-size: 250%;
             font-weight: bold;
             text-align: center;
         }
     }
-
     .index_titulo{
         color: rgb(61, 43, 226);
         font-size: 250%;
@@ -387,13 +353,11 @@ p{
             text-decoration: none;
             color: black;
         }
-
     }
     .index_texto:hover{
         transition: 1s;
         transform: scale(1.12,1);
     }
-
     .index_titulo:hover{
         transition: 3s;
         transform: scale(1.2,1);
@@ -401,35 +365,29 @@ p{
     .index_tamañoDeImagen{
         height: 300px;
     }
-    
 }
 /*====================================================================
     FALTA RESPONSIVE
 ====================================================================*/
-
 /***********************************************************
                     RESISTENCIA
 ************************************************************/
 .body_resistencia{
     background-color: $color_verde_claro;
-
     .main_resistencia{
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-
         .resistencia_seccion1{
             background-color: $color_seccion_1;
             @extend .margenes;
             }
-
         .resistencia_seccion2{
             text-align: center;
             background-color: $color_seccion_2;
             @extend .margenes;
-
             .resistencia_ItalicaCentrada{
                 font-style: italic;
                 text-align: center;
@@ -461,7 +419,6 @@ p{
                 }
             }
         }
-
         .resistencia_seccion3{
             height: 1200px;
             display: flex;     
@@ -470,7 +427,6 @@ p{
             align-items: center;
             background-color: $color_seccion_1;
             @extend .margenes;
-            
             .resistencia_resducirImagen1{
                 height: 450px;
                 width: auto;
@@ -479,19 +435,14 @@ p{
             .resistencia_lista{
                 font-size: 130%;
             }
-           
-
            .ejemplo{
                 font-size: 200%;
            }    
-
             .resistencia_resducirImagen2{
                 height: 150px;
                 width: auto;
                 padding-left: 50px;
             }
-           
-
         }
         .resistencia_seccion4{
             display: flex;
@@ -514,7 +465,6 @@ p{
 /*====================================================================
     FALTA RESPONSIVE
 ====================================================================*/
-
 /***********************************************************
                     DIODOS
 ************************************************************/
@@ -559,9 +509,9 @@ p{
                 .diodo_lista1Gris:hover{
                     color: gray;
                 }
-                }
             }
         }
+    }
         .diodos_seccion3{
             display: flex;
             flex-direction: column;
@@ -598,18 +548,15 @@ p{
                         margin-top: 5%;
                         text-align: center;
                     }
-
                 }
             }            
         }
     }
 
 }
-
 /*====================================================================
     FALTA RESPONSIVE
 ====================================================================*/
-
 /***********************************************************
                     CAPACITORES
 ************************************************************/
@@ -639,17 +586,13 @@ p{
             }
         }
     }
-
 }
-
 /*====================================================================
     FALTA RESPONSIVE
 ====================================================================*/
-
 /***********************************************************
                 TRANSISTORES
 ************************************************************/
-
 .body_transitores{
     background-color: #84C3BE;
     .main_transistores{
@@ -682,54 +625,3 @@ p{
     }
 
 }
-
-
-/**************************************************************
-                PRACTICAS CON BUCLES
-**************************************************************/
-
-$valor: 300px;
-/*bucle if*/
-.h2_bucle{
-    @if $valor < 500px {
-        background-color: pink;
-        height: 400px;
-        
-    }
-    @else if $valor < 1000px {
-        background-color: blue;
-        height: 500px;
-    }
-    @else if $valor < 1500px {
-        background-color: red;
-        height: 600px;
-    }
-    @else{
-        background-color: chartreuse;
-        height: 400px;
-    }
-}
-
-$altura: 1000px;
-$ancho: 1000px;
-/*BLOQUE FOR*/
-@for $i from 1 through 6 {
-    .padre{ .div#{$i} { 
-        width: $altura /$i ;
-        height: $ancho /$i;
-        border: blue solid 5px;
-        margin: 25px;
-        }
-        
-    }
-}
-//.#{$animales}-icon
-$i: 1;
-@each $colores in red, blue, green, pink, brown {
-    .div#{$i} {
-        background-color: #{$colores};
-        $i: $i+1;
-    }
-}
-
-
