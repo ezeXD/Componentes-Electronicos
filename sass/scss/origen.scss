@@ -6,11 +6,19 @@
 
 @import "responsive";
 @import "variables";
-/*GENERAL*/
 
+ /* EXTENDS */
+.margenes{
+    margin-left: 18%;
+    margin-bottom: 5%;
+    margin-right: 15%;
+    padding: 1%;
+}
+/*GENERAL*/
 body{
    font-family: 'Roboto', sans-serif;   
 }
+
 
 h1{
     text-align: center;
@@ -39,6 +47,7 @@ p{
 .cursiva{
    font-family: 'MonteCarlo', cursive;
 }
+
 
 /*====================================================================
     FALTA RESPONSIVE
@@ -413,19 +422,13 @@ p{
 
         .resistencia_seccion1{
             background-color: $color_seccion_1;
-            margin-bottom: $tam_margin-bottom;
-            margin-left: $tam_margin-left;
-            margin-right: $tam_margin-right;
-            padding: $tam_padding;
+            @extend .margenes;
             }
 
         .resistencia_seccion2{
             text-align: center;
             background-color: $color_seccion_2;
-            margin-bottom: $tam_margin-bottom;
-            margin-left: $tam_margin-left;
-            margin-right: $tam_margin-right;
-            padding: $tam_padding;
+            @extend .margenes;
 
             .resistencia_ItalicaCentrada{
                 font-style: italic;
@@ -466,11 +469,7 @@ p{
             justify-content: center;
             align-items: center;
             background-color: $color_seccion_1;
-            margin-left: $tam_margin-left;
-            margin-right: $tam_margin-right;
-            padding: $tam_padding;
-            margin-bottom: $tam_margin_bottom;
-
+            @extend .margenes;
             
             .resistencia_resducirImagen1{
                 height: 450px;
@@ -498,9 +497,7 @@ p{
             display: flex;
             justify-content: center;   
             background: $color_seccion_2;
-            margin-left: $tam_margin-left;
-            margin-right: $tam_margin-right;
-            padding: $tam_padding;
+            @extend .margenes;
 
             .resistencia_tabla{
                 margin-bottom: 7%;   
@@ -532,27 +529,18 @@ p{
 
         .diodos_seccion1{
             background-color: $color_seccion_2;
-            margin-bottom: $tam_margin-bottom;
-            margin-left: $tam_margin-left;
-            margin-right: $tam_margin-right;
-            padding: $tam_padding;
+            @extend .margenes;
         }
 
         .diodos_seccion2{
             text-align: center;
             .diodo_color1{
                 background-color: $color_seccion_1;
-                margin-bottom: $tam_margin-bottom;
-                margin-left: $tam_margin-left;
-                margin-right: $tam_margin-right;
-                padding: $tam_padding;
+                @extend .margenes;
             }
             .diodo_color2{
                 background-color: $color_seccion_2;
-                margin-bottom: $tam_margin-bottom;
-                margin-left: $tam_margin-left;
-                margin-right: $tam_margin-right;
-                padding: $tam_padding;
+                @extend .margenes;
 
                 .diodos_lista1{
                     margin-top: 1%;
@@ -580,10 +568,7 @@ p{
             flex-wrap: nowrap;
             .diodo_color1{
                 background-color: $color_seccion_1;
-                margin-bottom: $tam_margin-bottom;
-                margin-left: $tam_margin-left;
-                margin-right: $tam_margin-right;
-                padding: $tam_padding;
+                @extend .margenes;
                 .diodo_tituloh4{
                     font-size: 1.5em;
                     text-align: center;
@@ -635,10 +620,7 @@ p{
         margin-bottom: 5%;
         .capacitor_fondo1{
             background-color: $color_seccion_1;
-            margin-bottom: $tam_margin-bottom;
-            margin-left: $tam_margin-left;
-            margin-right: $tam_margin-right;
-            padding: $tam_padding;
+            @extend .margenes;
             .capacitor_imagen{
                 margin-top: 1.5%;
                 margin-bottom: 1%;
@@ -646,10 +628,7 @@ p{
         }
         .capacitor_fondo2{
             background-color: $color_seccion_2;
-            margin-bottom: $tam_margin-bottom;
-            margin-left: $tam_margin-left;
-            margin-right: $tam_margin-right;
-            padding: $tam_padding;
+            @extend .margenes;
             .capacitor_lista{
                 font-size: 110%;
                 color: rgb(27, 26, 26);
@@ -679,20 +658,14 @@ p{
             margin-bottom: 3%;
             .transistor_fondo1{
                 background-color: $color_seccion_2;
-                margin-bottom: $tam_margin-bottom;
-                margin-left: $tam_margin-left;
-                margin-right: $tam_margin-right;
-                padding: $tam_padding;
+                @extend .margenes;
                 .transistor_lista{
                     list-style: none;
                 }
             }
             .transistor_fondo2{
                 background-color: $color_seccion_1;
-                margin-bottom: $tam_margin-bottom;
-                margin-left: $tam_margin-left;
-                margin-right: $tam_margin-right;
-                padding: $tam_padding;
+                @extend .margenes;
                 .agrandarImagen{
                     margin-top: 25px;
                     margin-bottom: 25px;
@@ -709,3 +682,54 @@ p{
     }
 
 }
+
+
+/**************************************************************
+                PRACTICAS CON BUCLES
+**************************************************************/
+
+$valor: 300px;
+/*bucle if*/
+.h2_bucle{
+    @if $valor < 500px {
+        background-color: pink;
+        height: 400px;
+        
+    }
+    @else if $valor < 1000px {
+        background-color: blue;
+        height: 500px;
+    }
+    @else if $valor < 1500px {
+        background-color: red;
+        height: 600px;
+    }
+    @else{
+        background-color: chartreuse;
+        height: 400px;
+    }
+}
+
+$altura: 1000px;
+$ancho: 1000px;
+/*BLOQUE FOR*/
+@for $i from 1 through 6 {
+    .padre{ .div#{$i} { 
+        width: $altura /$i ;
+        height: $ancho /$i;
+        border: blue solid 5px;
+        margin: 25px;
+        }
+        
+    }
+}
+//.#{$animales}-icon
+$i: 1;
+@each $colores in red, blue, green, pink, brown {
+    .div#{$i} {
+        background-color: #{$colores};
+        $i: $i+1;
+    }
+}
+
+
