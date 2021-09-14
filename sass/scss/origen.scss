@@ -4,16 +4,29 @@
     padding: 0;
 }
 
-@import "responsive";
+
 @import "variables";
 
  /* EXTENDS */
-.margenes{
+
+.index_hijos{
+        display: flex;  
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 3%;
+        text-decoration: none;
+        color: black;
+}
+.secciones{
+    text-align: center;
+    background-color: $color_seccion_1;
     margin-left: 18%;
     margin-bottom: 5%;
     margin-right: 15%;
     padding: 1%;
 }
+
+
 /*GENERAL*/
 body{
    font-family: 'Roboto', sans-serif;   
@@ -21,7 +34,7 @@ body{
 h1{
     text-align: center;
     font-size: 400%;
-    background-image: linear-gradient(to top, rgb(4, 235, 223), cyan);
+    background-image: linear-gradient(to bottom, white , gray);
     padding-top: 0vh;
     margin-bottom: 5%;
 }
@@ -41,9 +54,6 @@ p{
 .cursiva{
    font-family: 'MonteCarlo', cursive;
 }
-/*====================================================================
-    FALTA RESPONSIVE
-====================================================================*/
 /*************************************************************
                     HEADER INDEX
 *************************************************************/
@@ -81,6 +91,7 @@ p{
             text-decoration: underline;
             background-color: rgb(212, 212, 212);
             }
+            
     }
     .nav_hijo2_logo{
         grid-area: logo;
@@ -125,6 +136,7 @@ p{
         background-size: cover;
         width: 100%;
     }
+    
 }
 /************************************************************
                HEADER OTRAS PAGINAS
@@ -163,7 +175,7 @@ p{
     .nav_hijo2{ 
     line-height: 70px; 
     color: black;
-    margin-top: 11vh;
+    margin-top: 9vh;
     height: 170px;
     width: 340px;
     padding-left: 25px;
@@ -190,8 +202,10 @@ p{
     background-image: linear-gradient(to bottom, gray ,black);
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;   
+    justify-content: space-around;  
+    padding-left: 5%; 
     .footer_hijo1{  
+        
         p{
             color: orange;
             text-decoration: underline;
@@ -202,6 +216,7 @@ p{
             margin-left: 30px;
         }
         ul{       
+            list-style: none;
             list-style-position: outside;
             padding: 5px;
             a{
@@ -233,9 +248,9 @@ p{
         animation-duration: 10s;
         animation-name: logo;
         animation-iteration-count: infinite;
-    }
+    } 
     .footer_hijo2_1{
-         line-height: 70px; 
+        line-height: 70px; 
         color: black;
         height: 180px;
         width: 375px;
@@ -276,21 +291,16 @@ p{
     flex-wrap: wrap;
     .index_hijo1{
         background-color: $color_verde_claro;
-        display: flex;  
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 3%;
-        text-decoration: none;
-        color: black;
+        @extend .index_hijos;
         flex-wrap: wrap;
 
+        flex-direction: row;
         .index_imagenRedonda{
             border-radius: 50%;
         }
         .index_imagenRedonda:hover{
             animation-name: cuadrado;
-            animation-duration: 2.5s;
+            animation-duration: 4s;
             animation-timing-function: linear;
         }
         @keyframes cuadrado{
@@ -304,14 +314,10 @@ p{
     }
     .index_hijo2{
         background-color: $color_celeste;
-        display: flex;  
-        flex-direction: row-reverse;
-        justify-content: space-evenly;
-        align-items: center;
-        padding: 3%;
-        text-decoration: none;
-        color: black;
+        @extend .index_hijos;
         flex-wrap: wrap;
+
+        flex-direction: row-reverse;
         .index_imagenCuadrada:hover{
             animation-name: rotar;
             animation-duration: 2.5s;
@@ -322,7 +328,7 @@ p{
         0%{
             transform: rotate(0deg);}
         50%{
-            transform: rotateZ(20deg);}
+            transform: rotateZ(8deg);}
         100%{
             transform: rotateZ(0deg);}
         }
@@ -353,41 +359,31 @@ p{
             text-decoration: none;
             color: black;
         }
+        a:hover{
+            color: rgb(66, 66, 66);
+        }
     }
     .index_texto:hover{
-        transition: 1s;
-        transform: scale(1.12,1);
-    }
-    .index_titulo:hover{
         transition: 3s;
-        transform: scale(1.2,1);
+        transform: scale(1.05,1);
     }
+    
     .index_tamañoDeImagen{
         height: 300px;
     }
 }
-/*====================================================================
-    FALTA RESPONSIVE
-====================================================================*/
 /***********************************************************
                     RESISTENCIA
 ************************************************************/
 .body_resistencia{
-    background-color: $color_verde_claro;
+    background-color: $fondo;
     .main_resistencia{
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between;
-        .resistencia_seccion1{
-            background-color: $color_seccion_1;
-            @extend .margenes;
-            }
-        .resistencia_seccion2{
-            text-align: center;
-            background-color: $color_seccion_2;
-            @extend .margenes;
+        .secciones{
             .resistencia_ItalicaCentrada{
                 font-style: italic;
                 text-align: center;
@@ -414,41 +410,44 @@ p{
                 padding-bottom: 3%;
 
                 .resistencia_imagen{
-                    width: auto;
                     height: 300px;
+                    width: auto;
                 }
             }
         }
         .resistencia_seccion3{
-            height: 1200px;
+            @extend .secciones;
+            height: 1450px;
             display: flex;     
             flex-direction: column; 
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
-            background-color: $color_seccion_1;
-            @extend .margenes;
-            .resistencia_resducirImagen1{
-                height: 450px;
-                width: auto;
-                margin-left: 18%;
+            ol{
+               text-align: left;
+               padding-top: 1%;
+               font-size: 130%;
             }
-            .resistencia_lista{
-                font-size: 130%;
+            .resistencia_resducirImagen1{
+                height: 43vh;
+                width: auto;
+                
             }
            .ejemplo{
+                margin-top: -25px;
                 font-size: 200%;
            }    
             .resistencia_resducirImagen2{
-                height: 150px;
+                height: 25vh;
                 width: auto;
-                padding-left: 50px;
+                margin-left: -1%;
             }
+            
         }
         .resistencia_seccion4{
+            @extend .secciones;
             display: flex;
             justify-content: center;   
-            background: $color_seccion_2;
-            @extend .margenes;
+            font-size: 110%;
 
             .resistencia_tabla{
                 margin-bottom: 7%;   
@@ -462,42 +461,22 @@ p{
         }
     }
 }
-/*====================================================================
-    FALTA RESPONSIVE
-====================================================================*/
 /***********************************************************
                     DIODOS
 ************************************************************/
 .body_diodo{
-    background-color: $color_celeste;
+    background-color: $fondo;
     .main_diodo{
         text-align: center;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         justify-content: space-between;
-
-        .diodos_seccion1{
-            background-color: $color_seccion_2;
-            @extend .margenes;
-        }
-
-        .diodos_seccion2{
-            text-align: center;
-            .diodo_color1{
-                background-color: $color_seccion_1;
-                @extend .margenes;
-            }
-            .diodo_color2{
-                background-color: $color_seccion_2;
-                @extend .margenes;
-
+        .secciones{
                 .diodos_lista1{
-                    margin-top: 1%;
                     text-align: left;
                     display: inline-block;
                     font-size: 130%;
-                    margin-bottom: 3%;
                     ol a{
                     text-decoration: none;
                     color: black;
@@ -509,40 +488,48 @@ p{
                 .diodo_lista1Gris:hover{
                     color: gray;
                 }
+                .diodos_imagen2{
+                    height: 300px;
+                    width: auto;
+                }
             }
         }
-    }
+
         .diodos_seccion3{
+            
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            .diodo_color1{
-                background-color: $color_seccion_1;
-                @extend .margenes;
+            justify-content: space-around;
+            
+            .secciones{
                 .diodo_tituloh4{
                     font-size: 1.5em;
                     text-align: center;
                     color:royalblue;
                 }
-                 .diodo_dividir{
-                     height: 400px;
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    flex-wrap: nowrap;
-                    justify-content: space-around;
-                    .diodo_parrafo{
-                        width: 60%;
-                    }
-                }
-                .diodo_dividir2{
-                    height: 900px;
+                 .diodo_dividir{   
+                    height: 400px;
                     display: flex;
                     flex-direction: row;
                     align-items: center;
                     flex-wrap: wrap;
                     justify-content: space-around;
-                    margin-bottom: 10%;
+                    .diodo_parrafo{
+                        width: 65%;
+                    }
+                }
+                .diodo_dividir2{
+                    height: auto;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    .distancia{
+                        margin-top: 3%;
+                        margin-bottom: 3%;
+                    }
                     .diodo_centrar{
                         font-size: 120%;
                         margin-top: 5%;
@@ -552,30 +539,22 @@ p{
             }            
         }
     }
-
 }
-/*====================================================================
-    FALTA RESPONSIVE
-====================================================================*/
 /***********************************************************
                     CAPACITORES
 ************************************************************/
 .body_capacitor{
-    background-color: $color_verde_claro;
+    background-color: $fondo;
     .main_capacitor{
         text-align: center;
         margin-bottom: 5%;
-        .capacitor_fondo1{
-            background-color: $color_seccion_1;
-            @extend .margenes;
+        .secciones{
             .capacitor_imagen{
                 margin-top: 1.5%;
                 margin-bottom: 1%;
             }
         }
-        .capacitor_fondo2{
-            background-color: $color_seccion_2;
-            @extend .margenes;
+        .secciones{
             .capacitor_lista{
                 font-size: 110%;
                 color: rgb(27, 26, 26);
@@ -587,28 +566,18 @@ p{
         }
     }
 }
-/*====================================================================
-    FALTA RESPONSIVE
-====================================================================*/
 /***********************************************************
                 TRANSISTORES
 ************************************************************/
 .body_transitores{
-    background-color: #84C3BE;
+    background-color: $fondo;
     .main_transistores{
-        text-align: center;
         .transistor_seccion{
             margin-bottom: 3%;
-            .transistor_fondo1{
-                background-color: $color_seccion_2;
-                @extend .margenes;
+            .secciones{
                 .transistor_lista{
                     list-style: none;
                 }
-            }
-            .transistor_fondo2{
-                background-color: $color_seccion_1;
-                @extend .margenes;
                 .agrandarImagen{
                     margin-top: 25px;
                     margin-bottom: 25px;
@@ -616,7 +585,6 @@ p{
                     width: auto;
                 }
             }
-
         }
         .transistor_h3{
             padding: 2%;
@@ -625,3 +593,5 @@ p{
     }
 
 }
+
+@import "responsive";

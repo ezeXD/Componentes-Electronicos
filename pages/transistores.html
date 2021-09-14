@@ -13,13 +13,11 @@
         <!--Boostrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <!--estilos-->
-        <link rel="stylesheet" href="../CSS/estilo.css" />
         <!--ESTILOS DEL SASS-->
         <link rel="stylesheet" href="../sass/css/destino.css" />
     </head>
+
     <body class=body_transitores>
-        
         <header>
             <!--NAV-->
             <nav class="nav_conteiner navbar navbar-expand-sm navbar-light">
@@ -27,14 +25,11 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-        
                 <!--LOGO-->
                 <div class="nav_hijo2">
                     <p class="cursiva">Componentes Electrónicos</p>
                 </div>
-        
                 <div class="collapse navbar-collapse" id="opciones">
-        
                     <!--ENLACES-->
                     <ul class="nav_hijo1 ">
                         <li class="nav-item"><a class="nav-link" href="../index.html"> inicio</a> </li>
@@ -52,11 +47,9 @@
         <!--EMPIEZA EL MAIN-->
         <main class="main_transistores">
             <h1>transistor</h1>
-            
-            
             <section class="transistor_seccion">
                 <!--ARTICULO 1-->
-                <article class="transistor_fondo1">
+                <article class="secciones">
                     <h2>¿Que es un transistor?</h2>
                     <p>
                         Un transistor es un dispositivo electrónico semiconductor, capaz de modificar una señal eléctrica de
@@ -64,9 +57,8 @@
                         de la misma.
                     </p>
                 </article >
-
                 <!--ARTICULO 2-->
-                <article class="transistor_fondo2">
+                <article class="secciones">
                     <h2>¿Como funcion un transistor?</h2>
                     <p>
                         El transistor consta de tres partes dopadas artificialmente que forman dos uniones bipolares: el emisor que emite 
@@ -74,8 +66,7 @@
                         modula el paso de dichos portadores (base). El transistor es un dispositivo controlado por corriente y del que se 
                         obtiene corriente amplificada.​
                     </p>
-                    <img class="agrandarImagen" src= "../imagenes/union npn y pnp del transistor.png" alt="union pnp y npn">
-                    
+                    <img class="agrandarImagen img-fluid" src= "../imagenes/union npn y pnp del transistor.png" alt="union pnp y npn">
                     <p>
                         De manera simplificada, la corriente que circula por el colector es función amplificada de la que se inyecta en el
                         emisor, pero el transistor solo gradúa la corriente que circula a través de sí mismo, si desde una fuente de corriente
@@ -84,9 +75,8 @@
                         transistor.
                     </p>
                 </article>
-
                 <!--ARTICULO 3-->
-                <article class="transistor_fondo1">
+                <article class="secciones">
                     <h2 id=>Regiones de operacion de un transistor:</h2>
                     
                     <ul class="transistor_lista">
@@ -101,7 +91,6 @@
                                 Se cumple que IC = β IB β es conocido como la ganancia del transistor
                             </p>
                         </li>
-                        
                         <li>
                             <h3  class="transistor_h3">Zona de corte</h3>
                             <p>
@@ -114,7 +103,6 @@
                                 prácticamente, a un circuito abierto.
                             </p>
                         </li>
-                        
                         <li>
                             <h3  class="transistor_h3">Zona de saturación o ruptura</h3>
                             <p>
@@ -122,7 +110,6 @@
                                 el modo encendido. El transistor actúa como un interruptor cerrado. (VCE=0)
                             </p>
                         </li>
-                        
                         <li>
                             <h3  class="transistor_h3">Zona activa inversa</h3>
                             <p>
@@ -131,19 +118,19 @@
                             </p>
                         </li>
                     </ol>
-                    <img class="agrandarImagen" src="http://storage.ning.com/topology/rest/1.0/file/get/2545417797?profile=original" alt="Zona de trabajo">
-                    
+                    <img class="agrandarImagen img-fluid" src="http://storage.ning.com/topology/rest/1.0/file/get/2545417797?profile=original" alt="Zona de trabajo">
                 </article>
             </section>
         </main>
         <!--CIERRA EL MAIN-->
+
         <!-- EMPIEZA EL FOOTER-->
-        <footer id=footer>
+        <footer id="footer">
         
             <div class="footer_hijo1">
                 <p class="footer_acomodar">links</p>
                 <ul>
-                    <li><a href="../index.html">home</a> </li>
+                    <li><a href="../index.html">inicio</a> </li>
                     <li><a href="../pages/resistencia.html">resistencias</a> </li>
                     <li><a href="../pages/diodos.html">diodo</a> </li>
                     <li><a href="../pages/capacitores.html">capacitores</a> </li>
@@ -171,6 +158,7 @@
             </div>
         </footer>
 
+        <!--boostrap js-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>

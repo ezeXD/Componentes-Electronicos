@@ -4,95 +4,18 @@
   margin: 0;
   padding: 0; }
 
-/*************************************************************
-                    RESPONSIVES
-**************************************************************/
-/*RESPONSIVE DEL INDEX*/
-@media screen and (max-width: 1023px) {
-  .index_hijo1 {
-    background-color: #BDECB6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    flex-wrap: wrap;
-    width: auto;
-    height: 1000px;
-    padding: -3%; }
-  .index_hijo2 {
-    background-color: #84C3BE;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    flex-wrap: wrap;
-    width: 94%;
-    height: 1000px;
-    padding-left: -3%; }
-  .index_tamañoDeImagen {
-    height: 200px; }
-  @keyframes cuadrado {}  @keyframes rotar {}  .index_texto1 {
-    width: 100%; }
-  .index_texto1:hover {
-    transform: scale(1, 1); } }
-
-/*RESPONSIVE DEL HEADER DE OTRAS PAGINAS */
-@media screen and (max-width: 1200px) {
-  .nav_hijo2 {
-    display: none; } }
-
-@media screen and (max-width: 800px) {
-  .nav_hijo {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: rgba(212, 212, 212, 0.8);
-    width: 200px; } }
-
-/*RESPONSIVE DEL INDEX*/
-@media screen and (max-width: 1023px) {
-  .index_hijo1 {
-    background-color: #BDECB6;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    flex-wrap: wrap;
-    width: auto;
-    height: 1000px;
-    padding: -3%; }
-  .index_hijo2 {
-    background-color: #84C3BE;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    flex-wrap: wrap;
-    width: 94%;
-    height: 1000px;
-    padding-left: -3%; }
-  .index_tamañoDeImagen {
-    height: 200px; }
-  @keyframes cuadrado {}  @keyframes rotar {}  .index_texto1 {
-    width: 100%; }
-  .index_texto1:hover {
-    transform: scale(1, 1); } }
-
-/*
-$tam_margin-left: 18%;
-$tam_margin-bottom: 5%;
-$tam_margin-right: 15%;
-$tam_padding: 1%;*/
 /* EXTENDS */
-.margenes, .body_resistencia .main_resistencia .resistencia_seccion1, .body_resistencia .main_resistencia .resistencia_seccion2, .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .resistencia_seccion4, .body_diodo .main_diodo .diodos_seccion1, .body_diodo .main_diodo .diodos_seccion2 .diodo_color1, .body_diodo .main_diodo .diodos_seccion2 .diodo_color2, .body_diodo .main_diodo .diodos_seccion3 .diodo_color1, .body_capacitor .main_capacitor .capacitor_fondo1, .body_capacitor .main_capacitor .capacitor_fondo2, .body_transitores .main_transistores .transistor_seccion .transistor_fondo1, .body_transitores .main_transistores .transistor_seccion .transistor_fondo2 {
+.index_hijos, .index_padre .index_hijo1, .index_padre .index_hijo2 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 3%;
+  text-decoration: none;
+  color: black; }
+
+.secciones, .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .resistencia_seccion4 {
+  text-align: center;
+  background-color: #84C3BE;
   margin-left: 18%;
   margin-bottom: 5%;
   margin-right: 15%;
@@ -105,7 +28,7 @@ body {
 h1 {
   text-align: center;
   font-size: 400%;
-  background-image: linear-gradient(to top, #04ebdf, cyan);
+  background-image: linear-gradient(to bottom, white, gray);
   padding-top: 0vh;
   margin-bottom: 5%; }
 
@@ -125,9 +48,6 @@ p {
 .cursiva {
   font-family: 'MonteCarlo', cursive; }
 
-/*====================================================================
-    FALTA RESPONSIVE
-====================================================================*/
 /*************************************************************
                     HEADER INDEX
 *************************************************************/
@@ -230,7 +150,7 @@ p {
   .nav_conteiner .nav_hijo2 {
     line-height: 70px;
     color: black;
-    margin-top: 11vh;
+    margin-top: 9vh;
     height: 170px;
     width: 340px;
     padding-left: 25px;
@@ -256,6 +176,7 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-left: 5%;
   /*===========================================================
     Ver si lo cambio por los iconso que cambia de color.            
 ===========================================================*/ }
@@ -267,6 +188,7 @@ p {
     margin-bottom: -7px;
     margin-left: 30px; }
   #footer .footer_hijo1 ul {
+    list-style: none;
     list-style-position: outside;
     padding: 5px; }
     #footer .footer_hijo1 ul a {
@@ -327,19 +249,13 @@ p {
   flex-wrap: wrap; }
   .index_padre .index_hijo1 {
     background-color: #BDECB6;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 3%;
-    text-decoration: none;
-    color: black;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    flex-direction: row; }
     .index_padre .index_hijo1 .index_imagenRedonda {
       border-radius: 50%; }
     .index_padre .index_hijo1 .index_imagenRedonda:hover {
       animation-name: cuadrado;
-      animation-duration: 2.5s;
+      animation-duration: 4s;
       animation-timing-function: linear; }
 
 @keyframes cuadrado {
@@ -351,14 +267,8 @@ p {
     border-radius: 50%; } }
   .index_padre .index_hijo2 {
     background-color: #84C3BE;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 3%;
-    text-decoration: none;
-    color: black;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    flex-direction: row-reverse; }
     .index_padre .index_hijo2 .index_imagenCuadrada:hover {
       animation-name: rotar;
       animation-duration: 2.5s;
@@ -369,7 +279,7 @@ p {
   0% {
     transform: rotate(0deg); }
   50% {
-    transform: rotateZ(20deg); }
+    transform: rotateZ(8deg); }
   100% {
     transform: rotateZ(0deg); } }
   .index_padre .index_hijo3 {
@@ -393,81 +303,73 @@ p {
     .index_padre .index_texto a {
       text-decoration: none;
       color: black; }
+    .index_padre .index_texto a:hover {
+      color: #424242; }
   .index_padre .index_texto:hover {
-    transition: 1s;
-    transform: scale(1.12, 1); }
-  .index_padre .index_titulo:hover {
     transition: 3s;
-    transform: scale(1.2, 1); }
+    transform: scale(1.05, 1); }
   .index_padre .index_tamañoDeImagen {
     height: 300px; }
 
-/*====================================================================
-    FALTA RESPONSIVE
-====================================================================*/
 /***********************************************************
                     RESISTENCIA
 ************************************************************/
 .body_resistencia {
-  background-color: #BDECB6; }
+  background-color: #12597e; }
   .body_resistencia .main_resistencia {
     margin-bottom: 5%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between; }
-    .body_resistencia .main_resistencia .resistencia_seccion1 {
-      background-color: mistyrose; }
-    .body_resistencia .main_resistencia .resistencia_seccion2 {
+    .body_resistencia .main_resistencia .secciones .resistencia_ItalicaCentrada, .body_resistencia .main_resistencia .resistencia_seccion3 .resistencia_ItalicaCentrada, .body_resistencia .main_resistencia .resistencia_seccion4 .resistencia_ItalicaCentrada {
+      font-style: italic;
       text-align: center;
-      background-color: cornsilk; }
-      .body_resistencia .main_resistencia .resistencia_seccion2 .resistencia_ItalicaCentrada {
-        font-style: italic;
-        text-align: center;
-        margin-bottom: 25px; }
-      .body_resistencia .main_resistencia .resistencia_seccion2 .resistencia_formula {
-        color: rgba(2, 0, 0, 0.801);
-        font-size: 160%;
-        border: 1px dotted #000; }
-      .body_resistencia .main_resistencia .resistencia_seccion2 .resistencia_centrar {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        list-style-type: circle;
-        margin-top: 25px; }
-      .body_resistencia .main_resistencia .resistencia_seccion2 .resistencia_juntar {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin-top: 3%;
-        padding-bottom: 3%; }
-        .body_resistencia .main_resistencia .resistencia_seccion2 .resistencia_juntar .resistencia_imagen {
-          width: auto;
-          height: 300px; }
-    .body_resistencia .main_resistencia .resistencia_seccion3 {
-      height: 1200px;
+      margin-bottom: 25px; }
+    .body_resistencia .main_resistencia .secciones .resistencia_formula, .body_resistencia .main_resistencia .resistencia_seccion3 .resistencia_formula, .body_resistencia .main_resistencia .resistencia_seccion4 .resistencia_formula {
+      color: rgba(2, 0, 0, 0.801);
+      font-size: 160%;
+      border: 1px dotted #000; }
+    .body_resistencia .main_resistencia .secciones .resistencia_centrar, .body_resistencia .main_resistencia .resistencia_seccion3 .resistencia_centrar, .body_resistencia .main_resistencia .resistencia_seccion4 .resistencia_centrar {
       display: flex;
       flex-direction: column;
-      justify-content: center;
       align-items: center;
-      background-color: mistyrose; }
-      .body_resistencia .main_resistencia .resistencia_seccion3 .resistencia_resducirImagen1 {
-        height: 450px;
-        width: auto;
-        margin-left: 18%; }
-      .body_resistencia .main_resistencia .resistencia_seccion3 .resistencia_lista {
+      list-style-type: circle;
+      margin-top: 25px; }
+    .body_resistencia .main_resistencia .secciones .resistencia_juntar, .body_resistencia .main_resistencia .resistencia_seccion3 .resistencia_juntar, .body_resistencia .main_resistencia .resistencia_seccion4 .resistencia_juntar {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: 3%;
+      padding-bottom: 3%; }
+      .body_resistencia .main_resistencia .secciones .resistencia_juntar .resistencia_imagen, .body_resistencia .main_resistencia .resistencia_seccion3 .resistencia_juntar .resistencia_imagen, .body_resistencia .main_resistencia .resistencia_seccion4 .resistencia_juntar .resistencia_imagen {
+        height: 300px;
+        width: auto; }
+    .body_resistencia .main_resistencia .resistencia_seccion3 {
+      height: 1450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .body_resistencia .main_resistencia .resistencia_seccion3 ol {
+        text-align: left;
+        padding-top: 1%;
         font-size: 130%; }
+      .body_resistencia .main_resistencia .resistencia_seccion3 .resistencia_resducirImagen1 {
+        height: 43vh;
+        width: auto; }
       .body_resistencia .main_resistencia .resistencia_seccion3 .ejemplo {
+        margin-top: -25px;
         font-size: 200%; }
       .body_resistencia .main_resistencia .resistencia_seccion3 .resistencia_resducirImagen2 {
-        height: 150px;
+        height: 25vh;
         width: auto;
-        padding-left: 50px; }
+        margin-left: -1%; }
     .body_resistencia .main_resistencia .resistencia_seccion4 {
       display: flex;
       justify-content: center;
-      background: cornsilk; }
+      font-size: 110%; }
       .body_resistencia .main_resistencia .resistencia_seccion4 .resistencia_tabla {
         margin-bottom: 7%; }
       .body_resistencia .main_resistencia .resistencia_seccion4 td {
@@ -476,123 +378,147 @@ p {
         text-align: center;
         color: dimgray; }
 
-/*====================================================================
-    FALTA RESPONSIVE
-====================================================================*/
 /***********************************************************
                     DIODOS
 ************************************************************/
 .body_diodo {
-  background-color: #84C3BE; }
+  background-color: #12597e; }
   .body_diodo .main_diodo {
     text-align: center;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: space-between; }
-    .body_diodo .main_diodo .diodos_seccion1 {
-      background-color: cornsilk; }
-    .body_diodo .main_diodo .diodos_seccion2 {
-      text-align: center; }
-      .body_diodo .main_diodo .diodos_seccion2 .diodo_color1 {
-        background-color: mistyrose; }
-      .body_diodo .main_diodo .diodos_seccion2 .diodo_color2 {
-        background-color: cornsilk; }
-        .body_diodo .main_diodo .diodos_seccion2 .diodo_color2 .diodos_lista1 {
-          margin-top: 1%;
-          text-align: left;
-          display: inline-block;
-          font-size: 130%;
-          margin-bottom: 3%; }
-          .body_diodo .main_diodo .diodos_seccion2 .diodo_color2 .diodos_lista1 ol a {
-            text-decoration: none;
-            color: black; }
-          .body_diodo .main_diodo .diodos_seccion2 .diodo_color2 .diodos_lista1 ol a:hover {
-            color: blue;
-            text-decoration: underline; }
-          .body_diodo .main_diodo .diodos_seccion2 .diodo_color2 .diodos_lista1 .diodo_lista1Gris:hover {
-            color: gray; }
+    .body_diodo .main_diodo .secciones .diodos_lista1, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion3 .diodos_lista1, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion3 .diodos_lista1, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion4 .diodos_lista1, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion4 .diodos_lista1 {
+      text-align: left;
+      display: inline-block;
+      font-size: 130%; }
+      .body_diodo .main_diodo .secciones .diodos_lista1 ol a, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion3 .diodos_lista1 ol a, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion3 .diodos_lista1 ol a, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion4 .diodos_lista1 ol a, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion4 .diodos_lista1 ol a {
+        text-decoration: none;
+        color: black; }
+      .body_diodo .main_diodo .secciones .diodos_lista1 ol a:hover, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion3 .diodos_lista1 ol a:hover, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion3 .diodos_lista1 ol a:hover, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion4 .diodos_lista1 ol a:hover, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion4 .diodos_lista1 ol a:hover {
+        color: blue;
+        text-decoration: underline; }
+      .body_diodo .main_diodo .secciones .diodos_lista1 .diodo_lista1Gris:hover, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion3 .diodos_lista1 .diodo_lista1Gris:hover, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion3 .diodos_lista1 .diodo_lista1Gris:hover, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion4 .diodos_lista1 .diodo_lista1Gris:hover, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion4 .diodos_lista1 .diodo_lista1Gris:hover {
+        color: gray; }
+      .body_diodo .main_diodo .secciones .diodos_lista1 .diodos_imagen2, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion3 .diodos_lista1 .diodos_imagen2, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion3 .diodos_lista1 .diodos_imagen2, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion4 .diodos_lista1 .diodos_imagen2, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion4 .diodos_lista1 .diodos_imagen2 {
+        height: 300px;
+        width: auto; }
     .body_diodo .main_diodo .diodos_seccion3 {
       display: flex;
       flex-direction: column;
-      flex-wrap: nowrap; }
-      .body_diodo .main_diodo .diodos_seccion3 .diodo_color1 {
-        background-color: mistyrose; }
-        .body_diodo .main_diodo .diodos_seccion3 .diodo_color1 .diodo_tituloh4 {
-          font-size: 1.5em;
-          text-align: center;
-          color: royalblue; }
-        .body_diodo .main_diodo .diodos_seccion3 .diodo_color1 .diodo_dividir {
-          height: 400px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          flex-wrap: nowrap;
-          justify-content: space-around; }
-          .body_diodo .main_diodo .diodos_seccion3 .diodo_color1 .diodo_dividir .diodo_parrafo {
-            width: 60%; }
-        .body_diodo .main_diodo .diodos_seccion3 .diodo_color1 .diodo_dividir2 {
-          height: 900px;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          flex-wrap: wrap;
-          justify-content: space-around;
-          margin-bottom: 10%; }
-          .body_diodo .main_diodo .diodos_seccion3 .diodo_color1 .diodo_dividir2 .diodo_centrar {
-            font-size: 120%;
-            margin-top: 5%;
-            text-align: center; }
+      flex-wrap: nowrap;
+      justify-content: space-around; }
+      .body_diodo .main_diodo .diodos_seccion3 .secciones .diodo_tituloh4, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion3 .diodo_tituloh4, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion3 .diodo_tituloh4, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion4 .diodo_tituloh4, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion4 .diodo_tituloh4 {
+        font-size: 1.5em;
+        text-align: center;
+        color: royalblue; }
+      .body_diodo .main_diodo .diodos_seccion3 .secciones .diodo_dividir, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion3 .diodo_dividir, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion3 .diodo_dividir, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion4 .diodo_dividir, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion4 .diodo_dividir {
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around; }
+        .body_diodo .main_diodo .diodos_seccion3 .secciones .diodo_dividir .diodo_parrafo, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion3 .diodo_dividir .diodo_parrafo, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion3 .diodo_dividir .diodo_parrafo, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion4 .diodo_dividir .diodo_parrafo, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion4 .diodo_dividir .diodo_parrafo {
+          width: 65%; }
+      .body_diodo .main_diodo .diodos_seccion3 .secciones .diodo_dividir2, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion3 .diodo_dividir2, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion3 .diodo_dividir2, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion4 .diodo_dividir2, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion4 .diodo_dividir2 {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center; }
+        .body_diodo .main_diodo .diodos_seccion3 .secciones .diodo_dividir2 .distancia, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion3 .diodo_dividir2 .distancia, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion3 .diodo_dividir2 .distancia, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion4 .diodo_dividir2 .distancia, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion4 .diodo_dividir2 .distancia {
+          margin-top: 3%;
+          margin-bottom: 3%; }
+        .body_diodo .main_diodo .diodos_seccion3 .secciones .diodo_dividir2 .diodo_centrar, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion3 .diodo_dividir2 .diodo_centrar, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion3 .diodo_dividir2 .diodo_centrar, .body_diodo .main_diodo .diodos_seccion3 .body_resistencia .main_resistencia .resistencia_seccion4 .diodo_dividir2 .diodo_centrar, .body_resistencia .main_resistencia .body_diodo .main_diodo .diodos_seccion3 .resistencia_seccion4 .diodo_dividir2 .diodo_centrar {
+          font-size: 120%;
+          margin-top: 5%;
+          text-align: center; }
 
-/*====================================================================
-    FALTA RESPONSIVE
-====================================================================*/
 /***********************************************************
                     CAPACITORES
 ************************************************************/
 .body_capacitor {
-  background-color: #BDECB6; }
+  background-color: #12597e; }
   .body_capacitor .main_capacitor {
     text-align: center;
     margin-bottom: 5%; }
-    .body_capacitor .main_capacitor .capacitor_fondo1 {
-      background-color: mistyrose; }
-      .body_capacitor .main_capacitor .capacitor_fondo1 .capacitor_imagen {
-        margin-top: 1.5%;
-        margin-bottom: 1%; }
-    .body_capacitor .main_capacitor .capacitor_fondo2 {
-      background-color: cornsilk; }
-      .body_capacitor .main_capacitor .capacitor_fondo2 .capacitor_lista {
-        font-size: 110%;
-        color: #1b1a1a;
-        text-align: left;
-        display: inline-block;
-        line-height: 1.75em;
-        margin-bottom: 2%; }
+    .body_capacitor .main_capacitor .secciones .capacitor_imagen, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion3 .capacitor_imagen, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion3 .capacitor_imagen, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion4 .capacitor_imagen, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion4 .capacitor_imagen {
+      margin-top: 1.5%;
+      margin-bottom: 1%; }
+    .body_capacitor .main_capacitor .secciones .capacitor_lista, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion3 .capacitor_lista, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion3 .capacitor_lista, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion4 .capacitor_lista, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion4 .capacitor_lista {
+      font-size: 110%;
+      color: #1b1a1a;
+      text-align: left;
+      display: inline-block;
+      line-height: 1.75em;
+      margin-bottom: 2%; }
 
-/*====================================================================
-    FALTA RESPONSIVE
-====================================================================*/
 /***********************************************************
                 TRANSISTORES
 ************************************************************/
 .body_transitores {
-  background-color: #84C3BE; }
-  .body_transitores .main_transistores {
-    text-align: center; }
-    .body_transitores .main_transistores .transistor_seccion {
-      margin-bottom: 3%; }
-      .body_transitores .main_transistores .transistor_seccion .transistor_fondo1 {
-        background-color: cornsilk; }
-        .body_transitores .main_transistores .transistor_seccion .transistor_fondo1 .transistor_lista {
-          list-style: none; }
-      .body_transitores .main_transistores .transistor_seccion .transistor_fondo2 {
-        background-color: mistyrose; }
-        .body_transitores .main_transistores .transistor_seccion .transistor_fondo2 .agrandarImagen {
-          margin-top: 25px;
-          margin-bottom: 25px;
-          height: 33vh;
-          width: auto; }
-    .body_transitores .main_transistores .transistor_h3 {
-      padding: 2%;
-      text-decoration: underline; }
+  background-color: #12597e; }
+  .body_transitores .main_transistores .transistor_seccion {
+    margin-bottom: 3%; }
+    .body_transitores .main_transistores .transistor_seccion .secciones .transistor_lista, .body_transitores .main_transistores .transistor_seccion .body_resistencia .main_resistencia .resistencia_seccion3 .transistor_lista, .body_resistencia .main_resistencia .body_transitores .main_transistores .transistor_seccion .resistencia_seccion3 .transistor_lista, .body_transitores .main_transistores .transistor_seccion .body_resistencia .main_resistencia .resistencia_seccion4 .transistor_lista, .body_resistencia .main_resistencia .body_transitores .main_transistores .transistor_seccion .resistencia_seccion4 .transistor_lista {
+      list-style: none; }
+    .body_transitores .main_transistores .transistor_seccion .secciones .agrandarImagen, .body_transitores .main_transistores .transistor_seccion .body_resistencia .main_resistencia .resistencia_seccion3 .agrandarImagen, .body_resistencia .main_resistencia .body_transitores .main_transistores .transistor_seccion .resistencia_seccion3 .agrandarImagen, .body_transitores .main_transistores .transistor_seccion .body_resistencia .main_resistencia .resistencia_seccion4 .agrandarImagen, .body_resistencia .main_resistencia .body_transitores .main_transistores .transistor_seccion .resistencia_seccion4 .agrandarImagen {
+      margin-top: 25px;
+      margin-bottom: 25px;
+      height: 33vh;
+      width: auto; }
+  .body_transitores .main_transistores .transistor_h3 {
+    padding: 2%;
+    text-decoration: underline; }
+
+/*************************************************************
+                    RESPONSIVES
+**************************************************************/
+/*RESPONSIVE DEL INDEX*/
+@media screen and (max-width: 1023px) {
+  .index_hijo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    flex-wrap: wrap;
+    width: auto;
+    height: 1000px;
+    padding: -3%;
+    width: 100%; }
+  .index_hijo2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    flex-wrap: wrap;
+    width: 94%;
+    height: 1000px;
+    padding-left: -3%;
+    width: 100%; }
+  .index_tamañoDeImagen {
+    height: 200px; }
+  @keyframes cuadrado {}  @keyframes rotar {}  .index_texto1 {
+    width: 100%; }
+  .index_texto1:hover {
+    transform: scale(1, 1); } }
+
+/*RESPONSIVE DEL HEADER DE OTRAS PAGINAS */
+@media screen and (max-width: 1200px) {
+  .nav_hijo2 {
+    display: none; } }
+
+@media screen and (max-width: 800px) {
+  .nav_hijo {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-color: rgba(212, 212, 212, 0.8);
+    width: 200px; } }

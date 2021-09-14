@@ -13,8 +13,6 @@
         <!--Boostrap-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-        <!--estilos-->
-        <link rel="stylesheet" href="../CSS/estilo.css" />
         <!--ESTILOS DEL SASS-->
         <link rel="stylesheet" href="../sass/css/destino.css" />
     </head>
@@ -23,18 +21,14 @@
         <header>
             <!--NAV-->
             <nav class="nav_conteiner navbar navbar-expand-sm navbar-light">
-        
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#opciones">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-        
                 <!--LOGO-->
                 <div class="nav_hijo2">
                     <p class="cursiva">Componentes Electrónicos</p>
                 </div>
-        
                 <div class="collapse navbar-collapse" id="opciones">
-        
                     <!--ENLACES-->
                     <ul class="nav_hijo1 ">
                         <li class="nav-item"><a class="nav-link" href="../index.html"> inicio</a> </li>
@@ -48,16 +42,13 @@
             <!--CIERRA EL NAV-->
         </header>
         <!--CIERRA EL HEADER-->
-
-        
         <!--EMPIEZA EL MAIN-->
         <main class="main_capacitor">
             <h1>Capacitor</h1>
-            
             <section>
                 <!--ARTICULO 1-->
-                <article class="capacitor_fondo1"> 
-                    <h2 id="que es un capacitor">¿Qué es un capacitor?</h2>
+                <article class="secciones"> 
+                    <h2>¿Qué es un capacitor?</h2>
                     <p>
                         Un capacitor o también conocido como condensador es un dispositivo capaz de almacenar energía a través de campos
                         eléctricos (uno positivo y uno negativo). Este se clasifica dentro de los componentes pasivos ya que no tiene la
@@ -66,11 +57,10 @@
                         Los capacitores se utilizan principalmente como filtros de corriente continua, ya que evitan cambios bruscos y ruidos en
                         las señales debido a su funcionamiento.
                     </p>
-                    <img class="capacitor_imagen" src="../imagenes/capacitor y simbolo.jpg" alt="capacitores">
-                    
+                    <img class="capacitor_imagen img-fluid" src="../imagenes/capacitor y simbolo.jpg" alt="capacitores">
                 </article>
                 <!--ARTICULO 2-->
-                <article class="capacitor_fondo2">
+                <article class="secciones">
                     <h2>Partes de un capacitor</h2>
                     <div class="capacitor_lista">
                         <p>Este dispocitivo consta de 3 partes escenciales:</p>
@@ -88,7 +78,7 @@
                     </div>
                 </article>
                 <!--ARTICULO 3--> <!--(tiene las mismas propiedades del articulo 1)-->
-                <article class="capacitor_fondo1">
+                <article class="secciones">
                     <h2>¿Comó funciona un capacitor?</h2>
                     <p>
                         En su estado natural cada una de las placas internas tiene el mismo numero de electrones. Cuando conectamos una fuente de
@@ -106,24 +96,22 @@
             </section>
         </main>
         <!--CIERRA EL MAIN-->
+
         <!-- EMPIEZA EL FOOTER-->
-        <footer id=footer>
-        
+        <footer id="footer">
             <div class="footer_hijo1">
                 <p class="footer_acomodar">links</p>
             <ul>
-                <li><a href="../index.html">home</a> </li>
+                <li><a href="../index.html">inicio</a> </li>
                 <li><a href="../pages/resistencia.html">resistencias</a> </li>
                 <li><a href="../pages/diodos.html">diodo</a> </li>
                 <li><a href="capacitores.html">capacitores</a> </li>
                 <li><a href="../pages/transistores.html">transistores</a> </li>
             </ul>
             </div>
-        
             <div class="footer_hijo2_1">
                 <p class="cursiva">Componentes Electrónicos</p>
             </div>
-        
             <div class="footer_hijo3">
                 <p class="footer_centrado">Siguenos en nuestras redes:</p>
                 <a href="#footer">
@@ -139,7 +127,8 @@
                 </a>
             </div>
         </footer>
-
+        
+        <!--boostrap js-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
             integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
             crossorigin="anonymous"></script>
