@@ -133,6 +133,7 @@ p{
         height: 70vh;
         background-size: cover;
         width: 100%;
+        
     }
     
 }
@@ -347,6 +348,34 @@ p{
             font-size: 250%;
             font-weight: bold;
             text-align: center;
+        }
+        /*Lo saque de internet*/
+        form{
+        padding: 60px;
+        max-width: 400px;
+        background-color: #E7E7E7;
+            input, textarea{
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+            border: none; 
+            color: #525c66; 
+            font-size: 1em;
+            resize: horizontal; 
+            }
+            button {
+                display: block;
+                background-color: #0095eb;
+                padding: 10px 40px 10px 40px;
+                border: 0;
+                font-size: 1em; 
+                color: 	white;
+            }
+            button:hover{
+                background-color: #046193;
+            }
         }
     }
     .index_titulo{
@@ -597,3 +626,4 @@ p{
 }
 
 @import "responsive";
+

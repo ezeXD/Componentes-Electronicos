@@ -32,7 +32,7 @@
                     <li><a href="pages/transistores.html">transitores </a> </li>
                 </ul>
                 <!--IMAGEN DE FONDO-->
-                <div class="nav_hijo3_fondo"></div>
+                <div class="nav_hijo3_fondo"> </div>
             </nav>
             <!--CIERRA EL NAV-->                
         </header>
@@ -42,7 +42,7 @@
             <!--RESISTENCIA-->          
             <section> 
                 <article >
-                    <div class="index_hijo1">
+                    <div id="resistencia" class="index_hijo1">
                         <a  href="pages/resistencia.html"> 
                             <p class="index_titulo">Resistencias </p>
                         </a>
@@ -139,7 +139,7 @@
                 </article>                
             </section>
             <!--TERMINA TRANSISTORES-->
-            <!--DUDAS / PREGUNTAS-->    
+            <!--FORMULARIO-->    
             <section class="index_hijo3">
                 
                 <p class="index_negrita"> Si tenes alguna duda y/o sugerencia Escribinos </p>
@@ -147,21 +147,16 @@
                 
                 <div>
                     <form enctype="text/plain">
-                        <label class="formulario" for="nombre"> nombre </label>
-                        <input type="text" name="nombre" placeholder="nombre">
-                        <br>
-                        <label class="formulario" for="apellido"> apellido </label>
-                        <input type="text" name="apellido" placeholder="apellido">
-                        <br>
-                        <label class="formulario" for="mail"> correo electrónico </label>                
-                        <input type="email" name="mail" placeholder="nombre@ejemplo.com">
-                        <br>
-                        <br>
-                        <textarea rows="6" cols= "50"></textarea>
-                        <br>
-                        <input type="submit" value="Enviar formulario">
+                        <label for="nombre"> nombre </label>
+                        <input  type="text" name="nombre" placeholder="nombre" required>
+                        <label  for="apellido"> apellido </label>
+                        <input  type="text" name="apellido" placeholder="apellido" required>
+                        <label  for="mail"> correo electrónico </label>                
+                        <input type="email" name="mail" placeholder="nombre@ejemplo.com" required>
+                        <textarea rows="6" cols= "50" placeholder="ingrese su consulta"required ></textarea>
+                        <button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
                     </form>
-                </div> 
+                </div>  
             </section>
         </main>
         <!--CIERRA EL MAIN-->

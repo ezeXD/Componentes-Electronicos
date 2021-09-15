@@ -292,11 +292,35 @@ p {
     justify-content: center;
     align-items: center;
     padding: 3%;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    /*Lo saque de internet*/ }
     .index_padre .index_hijo3 .index_negrita {
       font-size: 250%;
       font-weight: bold;
       text-align: center; }
+    .index_padre .index_hijo3 form {
+      padding: 60px;
+      max-width: 400px;
+      background-color: #E7E7E7; }
+      .index_padre .index_hijo3 form input, .index_padre .index_hijo3 form textarea {
+        margin-bottom: 10px;
+        width: 100%;
+        padding: 10px;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        border: none;
+        color: #525c66;
+        font-size: 1em;
+        resize: horizontal; }
+      .index_padre .index_hijo3 form button {
+        display: block;
+        background-color: #0095eb;
+        padding: 10px 40px 10px 40px;
+        border: 0;
+        font-size: 1em;
+        color: white; }
+      .index_padre .index_hijo3 form button:hover {
+        background-color: #046193; }
   .index_padre .index_titulo {
     color: #3d2be2;
     font-size: 250%;
@@ -492,8 +516,7 @@ p {
     flex-wrap: wrap;
     width: auto;
     height: 800px;
-    padding: -3%;
-    width: 100%; }
+    padding: -3%; }
   .index_padre .index_hijo2 {
     display: flex;
     flex-direction: column;
@@ -502,15 +525,13 @@ p {
     text-decoration: none;
     color: black;
     flex-wrap: wrap;
-    width: 94%;
     height: 800px;
-    padding-left: -3%;
-    width: 100%; }
+    padding-left: -3%; }
   .index_padre .index_texto {
     width: 80%; }
   .index_tamañoDeImagen {
     height: 200px; }
-  @keyframes cuadrado {}  @keyframes rotar {}  .index_texto1 {
+  .index_texto1 {
     width: 100%; }
   .index_texto1:hover {
     transform: scale(1, 1); } }
