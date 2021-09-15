@@ -21,12 +21,6 @@
   margin-right: 15%;
   padding: 1%; }
 
-.secciones_responsive {
-  margin-left: 0%;
-  margin-bottom: 10%;
-  margin-right: 0%;
-  padding: 2%; }
-
 /*GENERAL*/
 body {
   font-family: 'Roboto', sans-serif; }
@@ -483,12 +477,6 @@ p {
     padding: 2%;
     text-decoration: underline; }
 
-.secciones_responsive {
-  margin-left: 0%;
-  margin-bottom: 10%;
-  margin-right: 0%;
-  padding: 2%; }
-
 /*************************************************************
                     RESPONSIVES
 **************************************************************/
@@ -550,7 +538,7 @@ p {
     margin-right: 0%;
     padding: 2%; }
   .body_resistencia .main_resistencia .resistencia_seccion3 {
-    height: 1650px; }
+    height: 1450px; }
   .body_resistencia .main_resistencia .resistencia_seccion3 {
     margin-left: 0%;
     margin-bottom: 10%;
