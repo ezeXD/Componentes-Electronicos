@@ -520,10 +520,9 @@ p {
 /*RESPONSIVE DEL INDEX*/
 @media screen and (max-width: 800px) {
   .nav_hijo3_fondo .asdf {
-    margin-top: -40vh;
-    margin-left: -20px; }
-  .nav_hijo3_fondo .nav_icono {
-    margin-left: 50%; } }
+    margin-top: -40vh; }
+    .nav_hijo3_fondo .asdf .nav_icono {
+      margin-left: 50%; } }
 
 @media screen and (max-width: 1023px) {
   .index_padre .index_hijo1 {
