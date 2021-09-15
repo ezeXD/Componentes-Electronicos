@@ -1,11 +1,18 @@
+.secciones_responsive{
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%;
+}
+
 /*************************************************************
                     RESPONSIVES
 **************************************************************/
 /*RESPONSIVE DEL INDEX*/
 
 @media screen and (max-width: 1023px) {
-
-    .index_hijo1{
+    .index_padre{
+        .index_hijo1{
         display: flex;  
         flex-direction: column;
         justify-content: space-evenly;
@@ -14,7 +21,7 @@
         color: black;
         flex-wrap: wrap;
         width: auto;
-        height: 1000px;
+        height: 800px;
         padding: -3%;
         width: 100%;
     }
@@ -29,11 +36,15 @@
         color: black;
         flex-wrap: wrap;
         width: 94%;
-        height: 1000px;
+        height: 800px;
         padding-left: -3%;
         width: 100%;
     }
-
+    .index_texto{
+        width: 80%;
+    }
+    }
+    
     .index_tamañoDeImagen{
     height: 200px;
 }
@@ -65,5 +76,82 @@
         align-items: stretch;
         background-color: rgba(212, 212, 212,0.8);
         width: 200px;
+    }
+}
+
+/*****************************************************
+                    RESISTENCIAS
+*******************************************************/
+@media  (max-width: 800px){
+    .body_resistencia{
+        .main_resistencia{
+            .secciones{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+            }
+            .resistencia_seccion3{
+                height: 1650px;
+            }
+        .resistencia_seccion3{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+            }
+        }
+    }
+}
+/*****************************************************
+                    DIODOS
+*******************************************************/
+@media screen and (max-width: 800px){
+    .body_diodo{
+        .main_diodo{
+            .secciones{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+                    
+            }
+        }
+    }
+}
+/*****************************************************
+                    CAPACITORES
+*******************************************************/
+@media screen and (max-width: 800px){
+    .body_capacitor{
+        .main_capacitor{
+            .secciones{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+                }
+            .secciones{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+            }
+        }
+    }
+}
+/*****************************************************
+                    TRANSISTORES
+*******************************************************/
+@media screen and (max-width: 1000px){
+    .body_transitores{
+        .main_transistores{
+            .secciones{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+            }
+        }
     }
 }

@@ -21,6 +21,12 @@
   margin-right: 15%;
   padding: 1%; }
 
+.secciones_responsive {
+  margin-left: 0%;
+  margin-bottom: 10%;
+  margin-right: 0%;
+  padding: 2%; }
+
 /*GENERAL*/
 body {
   font-family: 'Roboto', sans-serif; }
@@ -239,6 +245,9 @@ p {
       padding-bottom: 2%; }
     #footer .footer_hijo3 .footer_reducirTamaño {
       height: 70px; }
+    #footer .footer_hijo3 .acomodar_res {
+      display: flex;
+      flex-direction: row; }
 
 /***********************************************************
                         INDEX
@@ -474,12 +483,18 @@ p {
     padding: 2%;
     text-decoration: underline; }
 
+.secciones_responsive {
+  margin-left: 0%;
+  margin-bottom: 10%;
+  margin-right: 0%;
+  padding: 2%; }
+
 /*************************************************************
                     RESPONSIVES
 **************************************************************/
 /*RESPONSIVE DEL INDEX*/
 @media screen and (max-width: 1023px) {
-  .index_hijo1 {
+  .index_padre .index_hijo1 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -488,10 +503,10 @@ p {
     color: black;
     flex-wrap: wrap;
     width: auto;
-    height: 1000px;
+    height: 800px;
     padding: -3%;
     width: 100%; }
-  .index_hijo2 {
+  .index_padre .index_hijo2 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -500,9 +515,11 @@ p {
     color: black;
     flex-wrap: wrap;
     width: 94%;
-    height: 1000px;
+    height: 800px;
     padding-left: -3%;
     width: 100%; }
+  .index_padre .index_texto {
+    width: 80%; }
   .index_tamañoDeImagen {
     height: 200px; }
   @keyframes cuadrado {}  @keyframes rotar {}  .index_texto1 {
@@ -522,3 +539,55 @@ p {
     align-items: stretch;
     background-color: rgba(212, 212, 212, 0.8);
     width: 200px; } }
+
+/*****************************************************
+                    RESISTENCIAS
+*******************************************************/
+@media (max-width: 800px) {
+  .body_resistencia .main_resistencia .secciones, .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .resistencia_seccion4 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; }
+  .body_resistencia .main_resistencia .resistencia_seccion3 {
+    height: 1650px; }
+  .body_resistencia .main_resistencia .resistencia_seccion3 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; } }
+
+/*****************************************************
+                    DIODOS
+*******************************************************/
+@media screen and (max-width: 800px) {
+  .body_diodo .main_diodo .secciones, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion3, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion4 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; } }
+
+/*****************************************************
+                    CAPACITORES
+*******************************************************/
+@media screen and (max-width: 800px) {
+  .body_capacitor .main_capacitor .secciones, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion3, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion4 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; }
+  .body_capacitor .main_capacitor .secciones, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion3, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion4 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; } }
+
+/*****************************************************
+                    TRANSISTORES
+*******************************************************/
+@media screen and (max-width: 1000px) {
+  .body_transitores .main_transistores .secciones, .body_transitores .main_transistores .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_transitores .main_transistores .resistencia_seccion3, .body_transitores .main_transistores .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_transitores .main_transistores .resistencia_seccion4 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; } }

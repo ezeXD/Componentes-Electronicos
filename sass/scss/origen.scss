@@ -25,6 +25,12 @@
     margin-right: 15%;
     padding: 1%;
 }
+.secciones_responsive{
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%;
+}
 
 
 /*GENERAL*/
@@ -279,6 +285,10 @@ p{
         }
         .footer_reducirTamaño{
             height: 70px;
+        }
+        .acomodar_res{
+        display: flex;
+        flex-direction: row;
         }
     }
 }
