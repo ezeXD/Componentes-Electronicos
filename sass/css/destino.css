@@ -116,6 +116,19 @@ p {
     height: 70vh;
     background-size: cover;
     width: 100%; }
+    .nav_padreFlex .nav_hijo3_fondo .nav_icono {
+      padding-top: 40vh;
+      margin-left: 50%;
+      color: blue;
+      animation-name: icono;
+      animation-duration: 2s;
+      animation-iteration-count: infinite; }
+
+@keyframes icono {
+  0% {
+    margin-top: 0px; }
+  100% {
+    margin-top: 50px; } }
 
 /************************************************************
                HEADER OTRAS PAGINAS
@@ -505,6 +518,12 @@ p {
                     RESPONSIVES
 **************************************************************/
 /*RESPONSIVE DEL INDEX*/
+@media screen and (max-width: 800px) {
+  .nav_hijo3_fondo .asdf {
+    margin-top: -30vh; }
+  .nav_hijo3_fondo .nav_icono {
+    margin-left: 50%; } }
+
 @media screen and (max-width: 1023px) {
   .index_padre .index_hijo1 {
     display: flex;

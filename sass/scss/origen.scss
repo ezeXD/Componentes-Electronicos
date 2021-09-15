@@ -134,6 +134,27 @@ p{
         background-size: cover;
         width: 100%;
         
+        
+        .nav_icono{
+            
+            padding-top: 40vh;
+            margin-left: 50%;
+            
+            color: blue;
+
+            animation-name: icono;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }    
+        
+    }
+    @keyframes icono {
+    0% {
+        margin-top: 0px;
+        }
+    100% {
+        margin-top: 50px;
+        }
     }
     
 }
