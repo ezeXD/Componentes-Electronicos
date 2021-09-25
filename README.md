@@ -1,10 +1,13 @@
 # Componentes-Electronicos
 
-Está es mi primera página web, la realize con lo aprendido en el curso CODERHOUSE.
+**Está es mi primera página web, la realize con lo aprendido en el curso CODERHOUSE.**
 
-*La página web es responsive.
-*utilice sass para desarrollar el código css 
-*aplique flexbox y grids
-*realice algunas animaciones (estan en el index)
-*aplique boostrap para hacer el menú hamburguesa 
-*y la publique en un servidor gratuito 
+## Temas que aplico en la página
+
+> - La página web es responsive.
+> - utilice sass para desarrollar el código css 
+> - aplique flexbox y grids
+> - realice algunas animaciones (estan en el index)
+> - use boostrap para hacer el menú hamburguesa 
+
+a la web la publique en un hosting gratuito <http://ezecomponentes.byethost10.com>
