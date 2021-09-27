@@ -4,6 +4,11 @@
   margin: 0;
   padding: 0; }
 
+/*posibles colores:
+
+linear-gradient( 315deg, pink, yellow);
+
+*/
 /* EXTENDS */
 .index_hijos, .index_padre .index_hijo1, .index_padre .index_hijo2 {
   display: flex;
@@ -15,7 +20,7 @@
 
 .secciones, .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .resistencia_seccion4 {
   text-align: center;
-  background-color: #84C3BE;
+  background-image: linear-gradient(315deg, #42ff42, #ffcb60);
   margin-left: 18%;
   margin-bottom: 5%;
   margin-right: 15%;
@@ -26,6 +31,7 @@ body {
   font-family: 'Roboto', sans-serif; }
 
 h1 {
+  color: black;
   text-align: center;
   font-size: 400%;
   background-image: linear-gradient(to bottom, white, gray);
@@ -79,7 +85,7 @@ p {
       font-size: 175%;
       padding: 5px; }
     .nav_padreFlex .nav_hijo1_enlace li a:hover {
-      color: blue;
+      color: gray;
       text-decoration: underline;
       background-color: #d4d4d4; }
   .nav_padreFlex .nav_hijo2_logo {
@@ -167,13 +173,13 @@ p {
       font-size: 150%;
       padding: 5px; }
     .nav_conteiner .nav_hijo1 li a:hover {
-      color: blue;
+      color: gray;
       text-decoration: underline;
       background-color: #d4d4d4; }
   .nav_conteiner .nav_hijo2 {
     line-height: 70px;
     color: black;
-    margin-top: 9vh;
+    margin-top: 8vh;
     height: 170px;
     width: 340px;
     padding-left: 25px;
@@ -228,21 +234,6 @@ p {
   #footer .footer_hijo2 {
     line-height: 70px;
     color: black;
-    height: 150px;
-    width: 300px;
-    padding-left: 50px;
-    padding-top: 15px;
-    font-size: 270%;
-    background-color: #e9e5e5;
-    border: solid red 5px;
-    background-image: linear-gradient(315deg, #9fb7da 20%, #ecd0d6 84%);
-    /*animacion*/
-    animation-duration: 10s;
-    animation-name: logo;
-    animation-iteration-count: infinite; }
-  #footer .footer_hijo2_1 {
-    line-height: 70px;
-    color: black;
     height: 180px;
     width: 375px;
     padding-left: 50px;
@@ -273,7 +264,7 @@ p {
 ************************************************************/
 .index_padre {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap; }
   .index_padre .index_hijo1 {
     background-color: #BDECB6;
@@ -318,7 +309,6 @@ p {
     align-items: center;
     padding: 3%;
     flex-wrap: wrap;
-    width: 100%;
     /*Lo saque de internet*/ }
     .index_padre .index_hijo3 .index_negrita {
       font-size: 250%;
@@ -368,7 +358,7 @@ p {
                     RESISTENCIA
 ************************************************************/
 .body_resistencia {
-  background-color: #12597e; }
+  background-image: linear-gradient(315deg, cyan, #00AAE4); }
   .body_resistencia .main_resistencia {
     margin-bottom: 5%;
     display: flex;
@@ -435,7 +425,7 @@ p {
                     DIODOS
 ************************************************************/
 .body_diodo {
-  background-color: #12597e; }
+  background-image: linear-gradient(315deg, cyan, #00AAE4); }
   .body_diodo .main_diodo {
     text-align: center;
     display: flex;
@@ -494,7 +484,7 @@ p {
                     CAPACITORES
 ************************************************************/
 .body_capacitor {
-  background-color: #12597e; }
+  background-image: linear-gradient(315deg, cyan, #00AAE4); }
   .body_capacitor .main_capacitor {
     text-align: center;
     margin-bottom: 5%; }
@@ -513,7 +503,7 @@ p {
                 TRANSISTORES
 ************************************************************/
 .body_transitores {
-  background-color: #12597e; }
+  background-image: linear-gradient(315deg, cyan, #00AAE4); }
   .body_transitores .main_transistores .transistor_seccion {
     margin-bottom: 3%; }
     .body_transitores .main_transistores .transistor_seccion .secciones .transistor_lista, .body_transitores .main_transistores .transistor_seccion .body_resistencia .main_resistencia .resistencia_seccion3 .transistor_lista, .body_resistencia .main_resistencia .body_transitores .main_transistores .transistor_seccion .resistencia_seccion3 .transistor_lista, .body_transitores .main_transistores .transistor_seccion .body_resistencia .main_resistencia .resistencia_seccion4 .transistor_lista, .body_resistencia .main_resistencia .body_transitores .main_transistores .transistor_seccion .resistencia_seccion4 .transistor_lista {
@@ -602,6 +592,31 @@ p {
   .index_padre .index_texto1:hover {
     transform: scale(1, 1); } }
 
+/************************************************************
+               HEADER OTRAS PAGINAS
+************************************************************/
+@media screen and (max-width: 1199px) {
+  .nav_conteiner {
+    height: auto; }
+    .nav_conteiner .nav_hijo1 {
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: start; }
+      .nav_conteiner .nav_hijo1 .nav-item {
+        width: 100%; }
+    .nav_conteiner .nav_hijo2 {
+      color: black;
+      height: 50px;
+      width: 300px;
+      margin-top: 0;
+      margin-right: 10px;
+      padding-top: 10px;
+      font-size: 1.5em;
+      background-color: #e9e5e5;
+      border: solid red 5px;
+      background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%); } }
+
 /*************************************************************
                     RESPONSIVES
 **************************************************************/
@@ -676,10 +691,12 @@ p {
 /*RESPONSIVE DEL HEADER DE OTRAS PAGINAS */
 /*
 @media screen and (max-width: 1200px){
+    .nav_conteiner{
     .nav_hijo2{
         display: none;
     
     }
+}
 }
 @media screen and (max-width: 800px){
     .nav_hijo{
@@ -690,85 +707,55 @@ p {
         width: 200px;
     }
 }
-
+*/
 /*****************************************************
                     RESISTENCIAS
 *******************************************************/
-/*
-@media  (max-width: 800px){
-    .body_resistencia{
-        .main_resistencia{
-            .secciones{
-                margin-left: 0%;
-                margin-bottom: 10%;
-                margin-right: 0%;
-                padding: 2%;
-            }
-            .resistencia_seccion3{
-                height: 1450px;
-            }
-        .resistencia_seccion3{
-                margin-left: 0%;
-                margin-bottom: 10%;
-                margin-right: 0%;
-                padding: 2%;
-            }
-        }
-    }
-}
+@media (max-width: 800px) {
+  .body_resistencia .main_resistencia .secciones, .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .resistencia_seccion4 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; }
+  .body_resistencia .main_resistencia .resistencia_seccion3 {
+    height: 1450px; }
+  .body_resistencia .main_resistencia .resistencia_seccion3 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; } }
+
 /*****************************************************
                     DIODOS
 *******************************************************/
-/*
-@media screen and (max-width: 800px){
-    .body_diodo{
-        .main_diodo{
-            .secciones{
-                margin-left: 0%;
-                margin-bottom: 10%;
-                margin-right: 0%;
-                padding: 2%;
-                    
-            }
-        }
-    }
-}
+@media screen and (max-width: 800px) {
+  .body_diodo .main_diodo .secciones, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion3, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion4 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; } }
+
 /*****************************************************
                     CAPACITORES
 *******************************************************/
-/*
-@media screen and (max-width: 800px){
-    .body_capacitor{
-        .main_capacitor{
-            .secciones{
-                margin-left: 0%;
-                margin-bottom: 10%;
-                margin-right: 0%;
-                padding: 2%;
-                }
-            .secciones{
-                margin-left: 0%;
-                margin-bottom: 10%;
-                margin-right: 0%;
-                padding: 2%;
-            }
-        }
-    }
-}
+@media screen and (max-width: 800px) {
+  .body_capacitor .main_capacitor .secciones, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion3, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion4 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; }
+  .body_capacitor .main_capacitor .secciones, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion3, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion4 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; } }
+
 /*****************************************************
                     TRANSISTORES
 *******************************************************/
-/*
-@media screen and (max-width: 1000px){
-    .body_transitores{
-        .main_transistores{
-            .secciones{
-                margin-left: 0%;
-                margin-bottom: 10%;
-                margin-right: 0%;
-                padding: 2%;
-            }
-        }
-    }
-}
-*/
+@media screen and (max-width: 1000px) {
+  .body_transitores .main_transistores .secciones, .body_transitores .main_transistores .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_transitores .main_transistores .resistencia_seccion3, .body_transitores .main_transistores .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_transitores .main_transistores .resistencia_seccion4 {
+    margin-left: 0%;
+    margin-bottom: 10%;
+    margin-right: 0%;
+    padding: 2%; } }

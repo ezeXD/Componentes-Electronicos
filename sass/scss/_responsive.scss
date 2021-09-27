@@ -106,9 +106,37 @@
 }
 
 
+/************************************************************
+               HEADER OTRAS PAGINAS
+************************************************************/
 
-
-
+@media screen and (max-width: 1199px){
+    .nav_conteiner{
+         height: auto;
+        .nav_hijo1{
+            width: auto;
+            display: flex;
+            flex-direction: column; 
+            justify-content: start;
+            .nav-item{
+                width: 100%;
+            }
+        }
+        .nav_hijo2{ 
+        color: black;
+        height: 50px;
+        width: 300px;
+        margin-top: 0;
+        margin-right: 10px;
+        padding-top: 10px;
+        font-size: 1.5em;
+        background-color: rgb(233, 229, 229);
+        border: solid red 5px;
+        background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%);    
+        
+    }
+    }
+}
 
 
 
@@ -207,10 +235,12 @@
 /*RESPONSIVE DEL HEADER DE OTRAS PAGINAS */
 /*
 @media screen and (max-width: 1200px){
+    .nav_conteiner{
     .nav_hijo2{
         display: none;
     
     }
+}
 }
 @media screen and (max-width: 800px){
     .nav_hijo{
@@ -221,10 +251,10 @@
         width: 200px;
     }
 }
-
+*/
 /*****************************************************
                     RESISTENCIAS
-*******************************************************//*
+*******************************************************/
 @media  (max-width: 800px){
     .body_resistencia{
         .main_resistencia{
@@ -248,7 +278,7 @@
 }
 /*****************************************************
                     DIODOS
-*******************************************************//*
+*******************************************************/
 @media screen and (max-width: 800px){
     .body_diodo{
         .main_diodo{
@@ -264,7 +294,7 @@
 }
 /*****************************************************
                     CAPACITORES
-*******************************************************//*
+*******************************************************/
 @media screen and (max-width: 800px){
     .body_capacitor{
         .main_capacitor{
@@ -285,7 +315,7 @@
 }
 /*****************************************************
                     TRANSISTORES
-*******************************************************//*
+*******************************************************/
 @media screen and (max-width: 1000px){
     .body_transitores{
         .main_transistores{
@@ -298,4 +328,3 @@
         }
     }
 }
-*/

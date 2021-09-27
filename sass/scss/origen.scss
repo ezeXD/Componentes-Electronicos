@@ -19,7 +19,9 @@
 }
 .secciones{
     text-align: center;
-    background-color: $color_seccion_1;
+    //background-image:  linear-gradient( 315deg, pink, yellow);
+    background-image: linear-gradient( 315deg, #42ff42, #ffcb60);
+    //background-color: $color_seccion_1;
     margin-left: 18%;
     margin-bottom: 5%;
     margin-right: 15%;
@@ -30,6 +32,7 @@ body{
    font-family: 'Roboto', sans-serif;   
 }
 h1{
+    color: black;
     text-align: center;
     font-size: 400%;
     background-image: linear-gradient(to bottom, white , gray);
@@ -87,7 +90,7 @@ p{
             padding: 5px;
             }
         li a:hover{
-            color: blue;
+            color: gray;
             text-decoration: underline;
             background-color: rgb(212, 212, 212);
             }
@@ -172,14 +175,18 @@ p{
 /************************************************************
                HEADER OTRAS PAGINAS
 ************************************************************/
-.nav_conteiner{
+
+.nav_conteiner{    
     width: 100%;
     height: 10vh;
+   
+
     display: flex;
     background-image: linear-gradient(to top, white , gray);
     flex-direction: row;
     /*enlaces*/
     .nav_hijo1{
+        
         width: 100%;
         display: flex;
         flex-direction: row; 
@@ -197,16 +204,17 @@ p{
             }
 
         li a:hover{
-            color: blue;
+            color: gray;
             text-decoration: underline;
             background-color: rgb(212, 212, 212);
         }
     }
+
     /*logo*/
     .nav_hijo2{ 
         line-height: 70px; 
         color: black;
-        margin-top: 9vh;
+        margin-top: 8vh;
         height: 170px;
         width: 340px;
         padding-left: 25px;
@@ -265,24 +273,8 @@ p{
             }
         }
     }
-    .footer_hijo2{ 
-        line-height: 70px; 
-        color: black;
-        height: 150px;
-        width: 300px;
-        padding-left: 50px;
-        padding-top: 15px;
-        font-size: 270%;
-        background-color: rgb(233, 229, 229);
-        border: solid red 5px;
-        background-image: linear-gradient(315deg, #9fb7da 20%, #ecd0d6 84%);
-
-        /*animacion*/
-        animation-duration: 10s;
-        animation-name: logo;
-        animation-iteration-count: infinite;
-    } 
-    .footer_hijo2_1{
+    
+    .footer_hijo2{
         line-height: 70px; 
         color: black;
         height: 180px;
@@ -324,7 +316,7 @@ p{
 ************************************************************/
 .index_padre{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     .index_hijo1{
         background-color: $color_verde_claro;
@@ -378,7 +370,6 @@ p{
         align-items: center;
         padding: 3%;
         flex-wrap: wrap;
-        width: 100%;
         .index_negrita{
             font-size: 250%;
             font-weight: bold;
@@ -442,7 +433,7 @@ p{
                     RESISTENCIA
 ************************************************************/
 .body_resistencia{
-    background-color: $fondo;
+    background-image: linear-gradient( 315deg,cyan, #00AAE4);
     .main_resistencia{
     margin-bottom: 5%;
     display: flex;
@@ -531,7 +522,7 @@ p{
                     DIODOS
 ************************************************************/
 .body_diodo{
-    background-color: $fondo;
+    background-image: linear-gradient( 315deg,cyan, #00AAE4);
     .main_diodo{
         text-align: center;
         display: flex;
@@ -610,7 +601,7 @@ p{
                     CAPACITORES
 ************************************************************/
 .body_capacitor{
-    background-color: $fondo;
+    background-image: linear-gradient( 315deg,cyan, #00AAE4);
     .main_capacitor{
         text-align: center;
         margin-bottom: 5%;
@@ -636,7 +627,7 @@ p{
                 TRANSISTORES
 ************************************************************/
 .body_transitores{
-    background-color: $fondo;
+    background-image: linear-gradient( 315deg,cyan, #00AAE4);
     .main_transistores{
         .transistor_seccion{
             margin-bottom: 3%;
