@@ -45,8 +45,6 @@
         display: row;
         .nav_hijo1_enlace{
             margin-left: 0%;
-           // margin-top: 0vh;
-            margin-left: 0%;
             flex-wrap: nowrap;
             width: 100%;
             margin-top: 4%;
@@ -123,135 +121,21 @@
             }
         }
         .nav_hijo2{ 
-        color: black;
-        height: 50px;
-        width: 300px;
-        margin-top: 0;
-        margin-right: 10px;
-        padding-top: 10px;
-        font-size: 1.5em;
-        background-color: rgb(233, 229, 229);
-        border: solid red 5px;
-        background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%);    
-        
-    }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*************************************************************
-                    RESPONSIVES
-**************************************************************/
-
-/*RESPONSIVE DEL INDEX*//*
-@media screen and (max-width: 600px){
-    //.nav_padreFlex{
-    .nav_hijo3_fondo{
-         
-         .nav_cont_icono{
-            margin-top: -20vh;
-            .nav_icono{
-            height: 120px;
-            width: 150px;
-            padding-left: 10px;
-            }
-         }
+            color: black;
+            height: 50px;
+            width: 300px;
+            margin-top: 0;
+            margin-right: 10px;
+            padding-top: 10px;
+            font-size: 1.5em;
+            background-color: rgb(233, 229, 229);
+            border: solid red 5px;
+            background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%);    
+            
+        }
     }
 }
 
-*//*
-@media screen and (max-width: 1023px) {
-    .index_padre{
-        .index_hijo1{
-        display: flex;  
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-decoration: none;
-        color: black;
-        flex-wrap: wrap;
-        height: 800px;
-        padding: -3%;
- 
-    }
-
-    .index_hijo2{
-
-        display: flex;  
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-decoration: none;
-        color: black;
-        flex-wrap: wrap;
-        height: 800px;
-        padding-left: -3%;
-    }
-    .index_hijo3{
-        width: 100%;
-
-    }
-    .index_texto{
-        width: 80%;
-        
-    }
-    }
-    
-    .index_tamañoDeImagen{
-        width: 400px;
-        height: auto;
-       
-    }
-
-    
-    .index_texto1:hover{
-        transform: scale(1,1);
-    }
-}
-
-/*RESPONSIVE DEL HEADER DE OTRAS PAGINAS */
-/*
-@media screen and (max-width: 1200px){
-    .nav_conteiner{
-    .nav_hijo2{
-        display: none;
-    
-    }
-}
-}
-@media screen and (max-width: 800px){
-    .nav_hijo{
-        display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        background-color: rgba(212, 212, 212,0.8);
-        width: 200px;
-    }
-}
-*/
 /*****************************************************
                     RESISTENCIAS
 *******************************************************/
@@ -259,18 +143,18 @@
     .body_resistencia{
         .main_resistencia{
             .secciones{
-                margin-left: 0%;
+                margin-left: 5%;
                 margin-bottom: 10%;
-                margin-right: 0%;
+                margin-right: 5%;
                 padding: 2%;
             }
             .resistencia_seccion3{
                 height: 1450px;
             }
         .resistencia_seccion3{
-                margin-left: 0%;
+                margin-left: 5%;
                 margin-bottom: 10%;
-                margin-right: 0%;
+                margin-right: 5%;
                 padding: 2%;
             }
         }
@@ -283,9 +167,9 @@
     .body_diodo{
         .main_diodo{
             .secciones{
-                margin-left: 0%;
+                margin-left: 5%;
                 margin-bottom: 10%;
-                margin-right: 0%;
+                margin-right: 5%;
                 padding: 2%;
                     
             }
@@ -299,15 +183,15 @@
     .body_capacitor{
         .main_capacitor{
             .secciones{
-                margin-left: 0%;
+                margin-left: 5%;
                 margin-bottom: 10%;
-                margin-right: 0%;
+                margin-right: 5%;
                 padding: 2%;
                 }
             .secciones{
-                margin-left: 0%;
+                margin-left: 5%;
                 margin-bottom: 10%;
-                margin-right: 0%;
+                margin-right: 5%;
                 padding: 2%;
             }
         }
@@ -320,9 +204,9 @@
     .body_transitores{
         .main_transistores{
             .secciones{
-                margin-left: 0%;
+                margin-left: 5%;
                 margin-bottom: 10%;
-                margin-right: 0%;
+                margin-right: 5%;
                 padding: 2%;
             }
         }
