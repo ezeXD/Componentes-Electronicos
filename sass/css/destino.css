@@ -24,7 +24,8 @@ linear-gradient( 315deg, pink, yellow);
   margin-left: 18%;
   margin-bottom: 5%;
   margin-right: 15%;
-  padding: 1%; }
+  padding: 1%;
+  border-radius: 25px; }
 
 /*GENERAL*/
 body {
@@ -661,7 +662,7 @@ p {
 /*****************************************************
                     TRANSISTORES
 *******************************************************/
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 800px) {
   .body_transitores .main_transistores .secciones, .body_transitores .main_transistores .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_transitores .main_transistores .resistencia_seccion3, .body_transitores .main_transistores .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_transitores .main_transistores .resistencia_seccion4 {
     margin-left: 5%;
     margin-bottom: 10%;
