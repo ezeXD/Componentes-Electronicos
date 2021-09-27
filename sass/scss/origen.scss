@@ -55,6 +55,7 @@ p{
 /*************************************************************
                     HEADER INDEX
 *************************************************************/
+
 .nav_padreFlex{ 
     height: 30vh;
     display: grid;
@@ -70,13 +71,14 @@ p{
         height: 150px;
         display: flex;
         flex-direction: row; 
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
         list-style: none;
-        width: 50%;
-        margin-left: 13%;
+        width: 65%;
+        margin-left: 5%;
         height: 30vh;
+        
         li a{
             text-decoration: none;
             color: rgb(48, 46, 46);
@@ -95,16 +97,18 @@ p{
         grid-area: logo;
         line-height: 70px; 
         color: black;
-        height: 150px;
-        width: 300px;
-        padding-left: 35px;
-        padding-top: 15px;
+        height: 170px;
+        width: 340px;
+        padding-left: 25px;
+        padding-top: 7,5px;
         font-size: 300%;
         background-color: rgb(233, 229, 229);
         border: solid red 5px;
         background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%);
-    
+        display: flex;
+        align-items: center;
     }
+
     /*ANIMACIOM*/
     .nav_hijo2_logo{  
         animation-duration: 10s;
@@ -134,28 +138,34 @@ p{
         height: 70vh;
         background-size: cover;
         width: 100%;
-        
-        
-        .nav_icono{
-            
+        .nav_cont_icono{
+            text-align: center;
+            height: 200px;
+            width: 200px;
             padding-top: 40vh;
-            margin-left: 50%;
-            
-            color: blue;
-
-            animation-name: icono;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-        }    
-        
+            padding-left: 35%;
+            .nav_icono_fondo{
+                //padding-top: 40vh;
+                //margin-left: 50%;
+                color: blue;
+                background-color: rgba(142, 150, 147,0.8 );
+                border-radius: 50%;
+                animation-name: icono;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }    
+        }
     }
     @keyframes icono {
     0% {
         margin-top: 0px;
         }
-    100% {
+    50% {
         margin-top: 50px;
         }
+    100%{
+        margin-top: 0px;
+    }
     }
     
 }
@@ -194,23 +204,25 @@ p{
     }
     /*logo*/
     .nav_hijo2{ 
-    line-height: 70px; 
-    color: black;
-    margin-top: 9vh;
-    height: 170px;
-    width: 340px;
-    padding-left: 25px;
-    padding-top: 7,5px;
-    padding-bottom: 7,5px;
-    font-size: 300%;
-    background-color: rgb(233, 229, 229);
-    border: solid red 5px;
-    background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%);          
+        line-height: 70px; 
+        color: black;
+        margin-top: 9vh;
+        height: 170px;
+        width: 340px;
+        padding-left: 25px;
+        padding-top: 7,5px;
+        padding-bottom: 7,5px;
+        font-size: 300%;
+        background-color: rgb(233, 229, 229);
+        border: solid red 5px;
+        background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%);    
+        display: flex;
+        align-items: center;      
     }
     .nav_hijo2{
-    animation-duration: 10s;
-    animation-name: logo;
-    animation-iteration-count: infinite;
+        animation-duration: 10s;
+        animation-name: logo;
+        animation-iteration-count: infinite;
     }
 }
 /**************************************************************
@@ -312,7 +324,7 @@ p{
 ************************************************************/
 .index_padre{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     .index_hijo1{
         background-color: $color_verde_claro;
@@ -366,6 +378,7 @@ p{
         align-items: center;
         padding: 3%;
         flex-wrap: wrap;
+        width: 100%;
         .index_negrita{
             font-size: 250%;
             font-weight: bold;

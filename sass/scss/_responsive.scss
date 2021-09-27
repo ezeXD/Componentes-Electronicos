@@ -1,18 +1,160 @@
+/*
+    RESPONSIVE
+*/
+
+/*************************************************************
+                    HEADER INDEX
+*************************************************************/
+
+@media screen and (max-width: 500px){
+    .nav_padreFlex{ 
+        display: flex;
+        .nav_hijo1_enlace{
+            margin-left: 25%;
+            width: 200px;
+            height: 200px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .nav_hijo2_logo{
+            width: 100%;
+            padding-left: 18%;
+            padding-top: 1%;
+            padding-bottom: -1%;
+            padding-bottom: 2%;
+        }
+        .nav_hijo3_fondo{
+            .nav_cont_icono{
+                width: 130px;
+                margin-top: -20vh;
+                margin-left: 0%;
+            }
+        }
+    }
+}
+@media (min-width: 501px) and (max-width: 700px){
+    .nav_padreFlex{ 
+        .nav_hijo1_enlace{
+            font-size: 0.75em;
+        }
+    }
+}        
+
+@media (min-width: 501px) and (max-width: 1200px) {
+    .nav_padreFlex{ 
+        display: row;
+        .nav_hijo1_enlace{
+            margin-left: 0%;
+           // margin-top: 0vh;
+            margin-left: 0%;
+            flex-wrap: nowrap;
+            width: 100%;
+            margin-top: 4%;
+           }
+           .nav-item{
+               height: 100%;
+           }
+        
+        .nav_hijo2_logo{
+           display: flex;
+           background-color: aquamarine;
+        }
+        .nav_hijo3_fondo{
+            .nav_cont_icono{
+                width: 130px;
+                margin-top: -20vh;
+                margin-left: 0%;
+            }
+        }
+    }
+}
+
+/*************************************************************
+                    INDEX
+*************************************************************/
+@media screen and (max-width: 1023px) {
+    .index_padre{
+        .index_hijo1{
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            height: 800px;
+            padding: -3%;
+        }
+
+        .index_hijo2{
+            align-items: center;
+            text-decoration: none;
+            color: black;
+            height: 800px;
+            padding-left: -3%;
+        }
+        .index_hijo3{
+            width: 100%;
+        }
+        .index_texto{
+            width: 80%; 
+        }
+        .index_tamañoDeImagen{
+            width: 400px;
+            height: auto;
+        }
+        .index_texto1:hover{
+            transform: scale(1,1);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*************************************************************
                     RESPONSIVES
 **************************************************************/
-/*RESPONSIVE DEL INDEX*/
-@media screen and (max-width: 800px){
+
+/*RESPONSIVE DEL INDEX*//*
+@media screen and (max-width: 600px){
     //.nav_padreFlex{
     .nav_hijo3_fondo{
          
          .nav_cont_icono{
             margin-top: -20vh;
+            .nav_icono{
+            height: 120px;
+            width: 150px;
+            padding-left: 10px;
+            }
          }
     }
 }
 
-
+*//*
 @media screen and (max-width: 1023px) {
     .index_padre{
         .index_hijo1{
@@ -23,7 +165,6 @@
         text-decoration: none;
         color: black;
         flex-wrap: wrap;
-        width: auto;
         height: 800px;
         padding: -3%;
  
@@ -40,27 +181,31 @@
         flex-wrap: wrap;
         height: 800px;
         padding-left: -3%;
- 
+    }
+    .index_hijo3{
+        width: 100%;
+
     }
     .index_texto{
         width: 80%;
+        
     }
     }
     
     .index_tamañoDeImagen{
-    height: 200px;
-}
-
-    .index_texto1{
-    width: 100%;
+        width: 400px;
+        height: auto;
+       
     }
+
+    
     .index_texto1:hover{
         transform: scale(1,1);
     }
 }
 
 /*RESPONSIVE DEL HEADER DE OTRAS PAGINAS */
-
+/*
 @media screen and (max-width: 1200px){
     .nav_hijo2{
         display: none;
@@ -79,7 +224,7 @@
 
 /*****************************************************
                     RESISTENCIAS
-*******************************************************/
+*******************************************************//*
 @media  (max-width: 800px){
     .body_resistencia{
         .main_resistencia{
@@ -103,7 +248,7 @@
 }
 /*****************************************************
                     DIODOS
-*******************************************************/
+*******************************************************//*
 @media screen and (max-width: 800px){
     .body_diodo{
         .main_diodo{
@@ -119,7 +264,7 @@
 }
 /*****************************************************
                     CAPACITORES
-*******************************************************/
+*******************************************************//*
 @media screen and (max-width: 800px){
     .body_capacitor{
         .main_capacitor{
@@ -140,7 +285,7 @@
 }
 /*****************************************************
                     TRANSISTORES
-*******************************************************/
+*******************************************************//*
 @media screen and (max-width: 1000px){
     .body_transitores{
         .main_transistores{
@@ -153,3 +298,4 @@
         }
     }
 }
+*/

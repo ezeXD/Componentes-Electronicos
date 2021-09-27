@@ -65,12 +65,12 @@ p {
     height: 150px;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    width: 50%;
-    margin-left: 13%;
+    width: 65%;
+    margin-left: 5%;
     height: 30vh; }
     .nav_padreFlex .nav_hijo1_enlace li a {
       text-decoration: none;
@@ -86,14 +86,16 @@ p {
     grid-area: logo;
     line-height: 70px;
     color: black;
-    height: 150px;
-    width: 300px;
-    padding-left: 35px;
-    padding-top: 15px;
+    height: 170px;
+    width: 340px;
+    padding-left: 25px;
+    padding-top: 7,5px;
     font-size: 300%;
     background-color: #e9e5e5;
     border: solid red 5px;
-    background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%); }
+    background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%);
+    display: flex;
+    align-items: center; }
   .nav_padreFlex .nav_hijo2_logo {
     animation-duration: 10s;
     animation-name: logo;
@@ -116,19 +118,27 @@ p {
     height: 70vh;
     background-size: cover;
     width: 100%; }
-    .nav_padreFlex .nav_hijo3_fondo .nav_icono {
+    .nav_padreFlex .nav_hijo3_fondo .nav_cont_icono {
+      text-align: center;
+      height: 200px;
+      width: 200px;
       padding-top: 40vh;
-      margin-left: 50%;
-      color: blue;
-      animation-name: icono;
-      animation-duration: 2s;
-      animation-iteration-count: infinite; }
+      padding-left: 35%; }
+      .nav_padreFlex .nav_hijo3_fondo .nav_cont_icono .nav_icono_fondo {
+        color: blue;
+        background-color: rgba(142, 150, 147, 0.8);
+        border-radius: 50%;
+        animation-name: icono;
+        animation-duration: 4s;
+        animation-iteration-count: infinite; }
 
 @keyframes icono {
   0% {
     margin-top: 0px; }
+  50% {
+    margin-top: 50px; }
   100% {
-    margin-top: 50px; } }
+    margin-top: 0px; } }
 
 /************************************************************
                HEADER OTRAS PAGINAS
@@ -172,7 +182,9 @@ p {
     font-size: 300%;
     background-color: #e9e5e5;
     border: solid red 5px;
-    background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%); }
+    background-image: linear-gradient(315deg, #d9e4f5 20%, #f5e3e6 84%);
+    display: flex;
+    align-items: center; }
   .nav_conteiner .nav_hijo2 {
     animation-duration: 10s;
     animation-name: logo;
@@ -261,7 +273,7 @@ p {
 ************************************************************/
 .index_padre {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap; }
   .index_padre .index_hijo1 {
     background-color: #BDECB6;
@@ -306,6 +318,7 @@ p {
     align-items: center;
     padding: 3%;
     flex-wrap: wrap;
+    width: 100%;
     /*Lo saque de internet*/ }
     .index_padre .index_hijo3 .index_negrita {
       font-size: 250%;
@@ -514,106 +527,248 @@ p {
     padding: 2%;
     text-decoration: underline; }
 
+/*
+    RESPONSIVE
+*/
+/*************************************************************
+                    HEADER INDEX
+*************************************************************/
+@media screen and (max-width: 500px) {
+  .nav_padreFlex {
+    display: flex; }
+    .nav_padreFlex .nav_hijo1_enlace {
+      margin-left: 25%;
+      width: 200px;
+      height: 200px;
+      display: flex;
+      flex-wrap: wrap; }
+    .nav_padreFlex .nav_hijo2_logo {
+      width: 100%;
+      padding-left: 18%;
+      padding-top: 1%;
+      padding-bottom: -1%;
+      padding-bottom: 2%; }
+    .nav_padreFlex .nav_hijo3_fondo .nav_cont_icono {
+      width: 130px;
+      margin-top: -20vh;
+      margin-left: 0%; } }
+
+@media (min-width: 501px) and (max-width: 700px) {
+  .nav_padreFlex .nav_hijo1_enlace {
+    font-size: 0.75em; } }
+
+@media (min-width: 501px) and (max-width: 1200px) {
+  .nav_padreFlex {
+    display: row; }
+    .nav_padreFlex .nav_hijo1_enlace {
+      margin-left: 0%;
+      margin-left: 0%;
+      flex-wrap: nowrap;
+      width: 100%;
+      margin-top: 4%; }
+    .nav_padreFlex .nav-item {
+      height: 100%; }
+    .nav_padreFlex .nav_hijo2_logo {
+      display: flex;
+      background-color: aquamarine; }
+    .nav_padreFlex .nav_hijo3_fondo .nav_cont_icono {
+      width: 130px;
+      margin-top: -20vh;
+      margin-left: 0%; } }
+
+/*************************************************************
+                    INDEX
+*************************************************************/
+@media screen and (max-width: 1023px) {
+  .index_padre .index_hijo1 {
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 800px;
+    padding: -3%; }
+  .index_padre .index_hijo2 {
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    height: 800px;
+    padding-left: -3%; }
+  .index_padre .index_hijo3 {
+    width: 100%; }
+  .index_padre .index_texto {
+    width: 80%; }
+  .index_padre .index_tamañoDeImagen {
+    width: 400px;
+    height: auto; }
+  .index_padre .index_texto1:hover {
+    transform: scale(1, 1); } }
+
 /*************************************************************
                     RESPONSIVES
 **************************************************************/
 /*RESPONSIVE DEL INDEX*/
-@media screen and (max-width: 800px) {
-  .nav_hijo3_fondo .nav_cont_icono {
-    margin-top: -20vh; } }
+/*
+@media screen and (max-width: 600px){
+    //.nav_padreFlex{
+    .nav_hijo3_fondo{
+         
+         .nav_cont_icono{
+            margin-top: -20vh;
+            .nav_icono{
+            height: 120px;
+            width: 150px;
+            padding-left: 10px;
+            }
+         }
+    }
+}
 
+*/
+/*
 @media screen and (max-width: 1023px) {
-  .index_padre .index_hijo1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    flex-wrap: wrap;
-    width: auto;
-    height: 800px;
-    padding: -3%; }
-  .index_padre .index_hijo2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    text-decoration: none;
-    color: black;
-    flex-wrap: wrap;
-    height: 800px;
-    padding-left: -3%; }
-  .index_padre .index_texto {
-    width: 80%; }
-  .index_tamañoDeImagen {
-    height: 200px; }
-  .index_texto1 {
-    width: 100%; }
-  .index_texto1:hover {
-    transform: scale(1, 1); } }
+    .index_padre{
+        .index_hijo1{
+        display: flex;  
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        flex-wrap: wrap;
+        height: 800px;
+        padding: -3%;
+ 
+    }
+
+    .index_hijo2{
+
+        display: flex;  
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        flex-wrap: wrap;
+        height: 800px;
+        padding-left: -3%;
+    }
+    .index_hijo3{
+        width: 100%;
+
+    }
+    .index_texto{
+        width: 80%;
+        
+    }
+    }
+    
+    .index_tamañoDeImagen{
+        width: 400px;
+        height: auto;
+       
+    }
+
+    
+    .index_texto1:hover{
+        transform: scale(1,1);
+    }
+}
 
 /*RESPONSIVE DEL HEADER DE OTRAS PAGINAS */
-@media screen and (max-width: 1200px) {
-  .nav_hijo2 {
-    display: none; } }
-
-@media screen and (max-width: 800px) {
-  .nav_hijo {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: rgba(212, 212, 212, 0.8);
-    width: 200px; } }
+/*
+@media screen and (max-width: 1200px){
+    .nav_hijo2{
+        display: none;
+    
+    }
+}
+@media screen and (max-width: 800px){
+    .nav_hijo{
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        background-color: rgba(212, 212, 212,0.8);
+        width: 200px;
+    }
+}
 
 /*****************************************************
                     RESISTENCIAS
 *******************************************************/
-@media (max-width: 800px) {
-  .body_resistencia .main_resistencia .secciones, .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .resistencia_seccion4 {
-    margin-left: 0%;
-    margin-bottom: 10%;
-    margin-right: 0%;
-    padding: 2%; }
-  .body_resistencia .main_resistencia .resistencia_seccion3 {
-    height: 1450px; }
-  .body_resistencia .main_resistencia .resistencia_seccion3 {
-    margin-left: 0%;
-    margin-bottom: 10%;
-    margin-right: 0%;
-    padding: 2%; } }
-
+/*
+@media  (max-width: 800px){
+    .body_resistencia{
+        .main_resistencia{
+            .secciones{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+            }
+            .resistencia_seccion3{
+                height: 1450px;
+            }
+        .resistencia_seccion3{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+            }
+        }
+    }
+}
 /*****************************************************
                     DIODOS
 *******************************************************/
-@media screen and (max-width: 800px) {
-  .body_diodo .main_diodo .secciones, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion3, .body_diodo .main_diodo .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_diodo .main_diodo .resistencia_seccion4 {
-    margin-left: 0%;
-    margin-bottom: 10%;
-    margin-right: 0%;
-    padding: 2%; } }
-
+/*
+@media screen and (max-width: 800px){
+    .body_diodo{
+        .main_diodo{
+            .secciones{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+                    
+            }
+        }
+    }
+}
 /*****************************************************
                     CAPACITORES
 *******************************************************/
-@media screen and (max-width: 800px) {
-  .body_capacitor .main_capacitor .secciones, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion3, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion4 {
-    margin-left: 0%;
-    margin-bottom: 10%;
-    margin-right: 0%;
-    padding: 2%; }
-  .body_capacitor .main_capacitor .secciones, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion3, .body_capacitor .main_capacitor .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_capacitor .main_capacitor .resistencia_seccion4 {
-    margin-left: 0%;
-    margin-bottom: 10%;
-    margin-right: 0%;
-    padding: 2%; } }
-
+/*
+@media screen and (max-width: 800px){
+    .body_capacitor{
+        .main_capacitor{
+            .secciones{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+                }
+            .secciones{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+            }
+        }
+    }
+}
 /*****************************************************
                     TRANSISTORES
 *******************************************************/
-@media screen and (max-width: 1000px) {
-  .body_transitores .main_transistores .secciones, .body_transitores .main_transistores .body_resistencia .main_resistencia .resistencia_seccion3, .body_resistencia .main_resistencia .body_transitores .main_transistores .resistencia_seccion3, .body_transitores .main_transistores .body_resistencia .main_resistencia .resistencia_seccion4, .body_resistencia .main_resistencia .body_transitores .main_transistores .resistencia_seccion4 {
-    margin-left: 0%;
-    margin-bottom: 10%;
-    margin-right: 0%;
-    padding: 2%; } }
+/*
+@media screen and (max-width: 1000px){
+    .body_transitores{
+        .main_transistores{
+            .secciones{
+                margin-left: 0%;
+                margin-bottom: 10%;
+                margin-right: 0%;
+                padding: 2%;
+            }
+        }
+    }
+}
+*/
